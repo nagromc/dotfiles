@@ -1,0 +1,259 @@
+[alias]
+  ada = add .
+  ads = "!sh -c 'git add ${@} && git st' -"
+  adsa = "!sh -c 'git ads .' -"
+  amd = commit --amend
+  amdn = commit --amend --no-edit
+  bi = bisect
+  bib = bisect bad
+  big = bisect good
+  bil = bisect log
+  bir = bisect reset
+  bisk = bisect skip
+  bist = bisect start
+  biv = bisect visualize
+  br = branch
+  brd = branch -d
+  brls = branch -vv
+  brlsa = branch --all -vv
+  brlsr = branch --remote -vv
+  # useful for other aliases
+  branch-name = "!sh -c 'git rev-parse --abbrev-ref HEAD' -"
+  ci = commit
+  cia = commit --all
+  ciam = commit --all --message
+  ciams = commit --all --gpg-sign --message
+  ciamns = commit --all --no-gpg-sign --message
+  cias = commit --all --gpg-sign
+  cians = commit --all --no-gpg-sign
+  cim = commit --message
+  cims = commit --gpg-sign --message
+  cimns = commit --no-gpg-sign --message
+  # undo the previous commit keeping the changes
+  ciundo = reset --soft HEAD^
+  cl = clean -d --dry-run
+  clf = clean -d --force
+  cli = clean -d --interactive
+  co = checkout
+  cob = checkout -b
+  # reset everything. Use it after changing .gitattributes file
+  co-from-scratch = "!sh -c 'git rm --cached -r . && git reset --hard' -"
+  # checkout latest tag
+  colt = "!sh -c 'git fetch --tags && git checkout $(git latest-tag)' -"
+  confed = config --global --edit
+  confedloc = "! vim ~/.config/git/gitconfig_local"
+  cp = cherry-pick
+  cpa = cherry-pick --abort
+  cpc = cherry-pick --continue
+  df = diff
+  dfiw = diff --ignore-all-space
+  dfs = diff --cached
+  dfsiw = diff --cached --ignore-all-space
+  dfw = diff --word-diff=color
+  dfws = "!sh -c 'git df --cached' -"
+  fe = fetch
+  fl = flow
+  flb = flow bugfix
+  flbc = flow bugfix checkout
+  flbd = flow bugfix diff
+  flbf = flow bugfix finish
+  flbpb = flow bugfix publish
+  flbpl = flow bugfix pull
+  flbrb = flow bugfix rebase
+  flbrm = flow bugfix delete
+  flbrn = flow bugfix rename
+  flbs = flow bugfix start
+  flbt = flow bugfix track
+  flf = flow feature
+  flfc = flow feature checkout
+  flfd = flow feature diff
+  flff = flow feature finish
+  flfpb = flow feature publish
+  flfpl = flow feature pull
+  flfrb = flow feature rebase
+  flfrm = flow feature delete
+  flfrn = flow feature rename
+  flfs = flow feature start
+  flft = flow feature track
+  flh = flow hotfix
+  flhf = flow hotfix finish
+  flhpb = flow hotfix publish
+  flhrb = flow hotfix rebase
+  flhrm = flow hotfix delete
+  flhrn = flow hotfix rename
+  flhs = flow hotfix start
+  flht = flow hotfix track
+  flr = flow release
+  flrf = flow release finish
+  flrpb = flow release publish
+  flrrb = flow release rebase
+  flrrm = flow release delete
+  flrs = flow release start
+  flrt = flow release track
+  ignore = update-index --assume-unchanged
+  ignoreinv = update-index --no-assume-unchanged
+  # useful for other aliases
+  latest-tag = "!sh -c 'git describe --tags $(git rev-list --tags --max-count=1)' -"
+  # log including remote
+  lg = "!sh -c 'git logg origin/$(git branch-name) $(git branch-name) ${@}' -"
+  lgv = "!sh -c 'git loggv origin/$(git branch-name) $(git branch-name) ${@}' -"
+  lgvv = "!sh -c 'git loggvv origin/$(git branch-name) $(git branch-name) ${@}' -"
+  # log including every known branch (local or remote)
+  lga = "!sh -c 'git logg --branches --remotes --tags ${@}' -"
+  lgav = "!sh -c 'git loggv --branches --remotes --tags ${@}' -"
+  lgavv = "!sh -c 'git loggvv --branches --remotes --tags ${@}' -"
+  # log only the local branch
+  lgl = "!sh -c 'git logg ${@}' -"
+  lglv = "!sh -c 'git loggv ${@}' -"
+  lglvv = "!sh -c 'git loggvv ${@}' -"
+  # base log graph command
+  logg = log --graph --abbrev-commit --decorate
+  loggv = log --graph --abbrev-commit --decorate --format=format:'%C(red)%h%C(reset) - %C(cyan)%aD%C(reset) %C(green)(%ar)%C(reset)%C(auto)%d%C(reset)%<(9)%n%C(blue)<%an> (%G?)%C(reset)%<(13)%n%s'
+  loggvv = log --graph --abbrev-commit --decorate --format=format:'%C(red)%h%C(reset) - %C(cyan)%aD [A]%C(reset) %C(green)(%ar)%C(reset) - %C(magenta)%cD [C]%C(reset) %C(green)(%cr)%C(reset) %C(auto)%d%C(reset)%<(9)%n%C(blue)<%an> [A]%C(reset) - %C(yellow)<%cn> [C] (%G?)%C(reset)%<(13)%n%s'
+  me = merge
+  mea = merge --abort
+  mec = merge --continue
+  mt = mergetool
+  patch = format-patch --output-directory /tmp
+  pl = pull
+  plum = pull upstream master
+  ps = push
+  psa = push --all
+  psf = push --force
+  pst = push --tags
+  psu = "!sh -c 'git push --set-upstream origin $(git branch-name)' -"
+  rb = rebase
+  rba = rebase --abort
+  rbc = rebase --continue
+  rbi = rebase --interactive
+  rbs = rebase --skip
+  rem = remote
+  # add a remote forked repo (e.g. `git remau https://github.com/user/forked-repo.git`)
+  remau = remote add upstream
+  # delete a branch on the repo
+  remdbr = push --delete origin
+  # delete a tag on the repo. Yeah, this is the same alias for deleting a branch but my brain works like that okay?
+  remdt = push --delete origin
+  # remove the deleted remote branches existing on the local repo
+  remsyncbr = remote prune origin
+  remv = remote -v
+  restore = checkout --
+  # to use after `git reflog'
+  rewind = "!sh -c 'git reset --hard HEAD@{${1}}' -"
+  rl = reflog
+  rls = reflog show --date=iso
+  rs = reset
+  rsh = reset --hard
+  rss = reset --soft
+  rsmi = reset --mixed
+  rsme = reset --merge
+  rv = revert
+  rva = revert --abort
+  rvc = revert --continue
+  sb = show-branch
+  sbc = show-branch --current
+  sbt = show-branch --topic
+  sh = show
+  shv = show --pretty=fuller --date=iso --show-signature
+  # usage:
+  # * to sign the 3 last commits: git sign-commits HEAD~3..HEAD
+  # * or from commit a1b2c3d: git sign-commits a1b2c3d..HEAD
+  sign-commits = filter-branch -f --commit-filter 'git commit-tree -S "$@"'
+  sm = submodule
+  sms = submodule sync
+  smu = submodule update --init --recursive
+  smur = submodule update --init --recursive --remote
+  ssa = "!sh -c 'git stash apply --index stash@{${1}}' -"
+  # show stash diff for tracked files
+  ssdif = "!sh -c 'git stash show --patch-with-stat --word-diff=color stash@{${1}} | less' -"
+  # show stash diff for *UN*tracked files
+  ssdifu = "!sh -c 'git show --patch stash@{${1}}^3' -"
+  ssls = stash list
+  ssp = stash pop
+  ssrm = "!sh -c 'git stash drop stash@{${1}}' -"
+  sss = stash save --include-untracked
+  st = status
+  sti = status --ignored
+  tg = tag
+  tgd = tag --delete
+  tgs = tag --sign
+  # unstage changes
+  uns = reset HEAD
+[clean]
+  # explicitly set requireForce to true to avoid accidents
+  requireForce = true
+[color]
+  diff = auto
+  ui = auto
+[color "diff"]
+  frag = cyan bold
+  meta = yellow
+  newMoved = green bold
+  newMovedAlternative = cyan bold
+  newMovedAlternativeDimmed = cyan dim
+  newMovedDimmed = green dim
+  oldMoved = red bold
+  oldMovedAlternative = magenta bold
+  oldMovedAlternativeDimmed = magenta dim
+  oldMovedDimmed = red dim
+  whitespace = black magenta
+[color "status"]
+  added = green
+  changed = blue
+  untracked = magenta
+  updated = green
+[commit]
+  cleanup = scissors
+[core]
+  attributesFile = ~/.config/git/gitattributes_global
+  editor = nano
+  excludesfile = ~/.config/git/gitignore_global
+  # append to LESS envvar special less options for Git
+  # https://git-scm.com/docs/git-config#git-config-corepager
+  pager = diff-so-fancy | less --chop-long-lines
+  whitespace = blank-at-eol,space-before-tab,tab-in-indent,blank-at-eof
+[delta]
+  line-numbers = true
+[diff]
+  colorMoved = dimmed_zebra
+  # use (i)ndex, (w)ork tree, (c)ommit and (o)bject instead of a/b/c/d
+  mnemonicprefix = true
+[diff "exif"]
+  textconv = exiftool
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
+[filter "tabspace"]
+  smudge = expand --tabs=2 --initial
+  clean = unexpand --tabs=2 --first-only
+[format]
+  pretty = %C(red)%h%C(reset) -%C(auto)%d%C(reset) %s %C(green)(%ad)%C(reset) %C(blue)<%an>%C(reset)
+[log]
+  date = relative
+[merge]
+  ff = false
+  tool = vimdiff
+[status]
+  branch = true
+  short = true
+[pager]
+  diff = delta
+  log = delta
+  reflog = delta
+  show = delta
+[pull]
+  rebase = preserve
+[push]
+  default = simple
+  followTags = true
+  gpgSign = if-asked
+[rebase]
+  autoStash = true
+[status]
+  branch = true
+  short = true
+[user]
+  name = Morgan Courbet
+  email = {{ .git.email | quote }}

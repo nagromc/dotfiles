@@ -1,0 +1,5 @@
+[directory]
+truncation_symbol = "…/"
+
+[git_commit]
+tag_disabled = false
