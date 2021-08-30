@@ -1,0 +1,13 @@
+[directory]
+truncation_symbol = "…/"
+
+[git_commit]
+tag_disabled = false
+{{- if eq .chezmoi.hostname "PC8043" }}
+tag_symbol = " tag:"
+{{ end -}}
+
+{{- if eq .chezmoi.hostname "PC8043" }}
+[package]
+symbol = "pkg "
+{{ end -}}
