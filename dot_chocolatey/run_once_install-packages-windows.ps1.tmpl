@@ -1,3 +1,2 @@
 # chocolatey-packages.config.tmpl hash: {{ include "dot_chocolatey/chocolatey-packages.config.tmpl" | sha256sum }}
 gsudo -d choco install {{ joinPath .chezmoi.homeDir ".chocolatey/chocolatey-packages.config" | quote }}
-
