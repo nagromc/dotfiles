@@ -1,0 +1,12 @@
+{{ "# Do *not* edit this file as it will be overwritten on next `chezmoi init` call." }}
+{{ printf "# Edit `%s/.chezmoi.yaml.tmpl` instead" .chezmoi.sourceDir }}
+
+{{ if eq .chezmoi.os "windows" }}
+# override default cmd.exe on windows
+cd:
+  command: pwsh
+{{ end }}
+
+data:
+  git:
+    email: {{ promptString "email" }}
