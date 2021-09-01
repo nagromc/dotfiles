@@ -1,0 +1,11 @@
+{
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.fontSize": 12,
+  "editor.renderWhitespace": "boundary",
+  "files.autoSave": "onFocusChange",
+  "search.smartCase": true,
+  "telemetry.enableTelemetry": false,
+  "workbench.colorTheme": "Monokai",
+  "workbench.startupEditor": "none",
+}
