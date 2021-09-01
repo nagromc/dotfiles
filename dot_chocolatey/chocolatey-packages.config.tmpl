@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packages>
+  <package id="7zip" />
+  <package id="AdoptOpenJDK11" />
+  <package id="alacritty" />
+  <package id="bat" />
+  <package id="bottom" />
+  <package id="chocolateygui" />
+  <package id="chromium" />
+  <package id="clink" />
+  <package id="AdoptConEmuOpenJDK11" />
+  <package id="curl" />
+  <package id="delta" />
+  <package id="dust" />
+  <package id="etcher" />
+  <package id="fd" />
+  <package id="Firefox" />
+  <package id="fzf" />
+  <package id="git" />
+  <package id="gitui" />
+  <package id="gpg4win" />
+  <package id="gsudo" />
+  <package id="httpie" />
+  <package id="keepassxc" />
+  <package id="lazygit" />
+  <package id="less" />
+  <package id="maven" />
+  <package id="navi" />
+  <package id="openhardwaremonitor" />
+  <package id="pandoc" />
+  <package id="powershell-core" />
+  <package id="procexp" />
+  <package id="psutils" />
+  <package id="putty" />
+  <package id="python2" />
+  <package id="python3" />
+  <package id="quicklook" />
+  <package id="ripgrep" />
+  <package id="screentogif" />
+  <package id="spotify" />
+  <package id="starship" />
+  <package id="sublimetext4" />
+  <package id="sumatrapdf" />
+  <package id="syncthing" />
+  <package id="TcpView" />
+  <package id="tldr" />
+  <package id="vscode" />
+  <package id="Wget" />
+  <package id="zoxide" />
+
+  {{- if eq .usage "home" }}
+  <!-- specific for home -->
+  <package id="epicgameslauncher" />
+  <package id="goggalaxy" />
+  <package id="origin" />
+  <package id="playnite" />
+  <package id="steam-client" />
+  <package id="ubisoft-connect" />
+  <!-- end specific for home -->
+  {{ end -}}
+
+  {{- if eq .usage "work" }}
+  <!-- specific for work -->
+  <package id="docker-desktop" />
+  <package id="firefox-dev" />
+  <package id="insomnia-rest-api-client" />
+  <package id="keystore-explorer.portable" />
+  <package id="openssl" />
+  <package id="postman" />
+  <package id="soapui" />
+  <package id="SQLite" />
+  <package id="vagrant" />
+  <package id="virtualbox" />
+  <package id="visualstudio2019community" />
+  <package id="wireshark" />
+  <!-- end specific for work -->
+  {{ end -}}
+</packages>
