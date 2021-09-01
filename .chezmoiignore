@@ -6,6 +6,7 @@ Library
 
 {{ if ne .chezmoi.os "linux" }}
 .config/Code
+.config/sublime-text
 {{ end }}
 
 {{ if ne .chezmoi.os "windows" }}

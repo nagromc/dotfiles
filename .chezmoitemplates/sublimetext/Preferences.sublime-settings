@@ -1,0 +1,19 @@
+// Settings in here override those in "Default/Preferences.sublime-settings",
+// and are overridden in turn by syntax-specific settings.
+{
+  "caret_style": "smooth",
+  "color_scheme": "Packages/Color Scheme - Default/Mariana.sublime-color-scheme",
+  "font_size": 9,
+  "hardware_acceleration": "opengl",
+  "highlight_line": true,
+  "ignored_packages":
+  [
+    "Vintage",
+  ],
+  "rulers":
+  [
+    100,
+    120
+  ],
+  "theme": "Adaptive.sublime-theme",
+}
