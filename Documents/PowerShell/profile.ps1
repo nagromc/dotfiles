@@ -17,5 +17,9 @@ Invoke-Expression (&starship init powershell)
 Invoke-Expression (& { $hook = if ($PSVersionTable.PSVersion.Major -ge 6) { 'pwd' } else { 'prompt' } (zoxide init powershell --hook $hook) -join "`n" })
 
 
+# `just` completions
+Invoke-Expression (& { (just --completions powershell ) -join "`n" })
+
+
 # count shell level
 $ENV:SHLVL = [int] $ENV:SHLVL + 1
