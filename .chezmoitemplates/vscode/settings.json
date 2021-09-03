@@ -10,6 +10,8 @@
   "files.autoSave": "onFocusChange",
   "search.smartCase": true,
   "telemetry.enableTelemetry": false,
+  "terminal.integrated.fontFamily": "'FiraCode NF', monospace",
+  "terminal.integrated.fontSize": 12,
   "workbench.colorTheme": "Monokai",
   "workbench.startupEditor": "none",
 }
