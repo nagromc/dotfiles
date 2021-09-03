@@ -21,5 +21,9 @@ Invoke-Expression (& { $hook = if ($PSVersionTable.PSVersion.Major -ge 6) { 'pwd
 Invoke-Expression (& { (just --completions powershell ) -join "`n" })
 
 
+# git completions
+Import-Module posh-git
+
+
 # count shell level
 $ENV:SHLVL = [int] $ENV:SHLVL + 1
