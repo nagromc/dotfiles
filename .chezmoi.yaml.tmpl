@@ -1,6 +1,8 @@
 {{ "# Do *not* edit this file as it will be overwritten on next `chezmoi init` call." }}
 {{ printf "# Edit `%s/.chezmoi.yaml.tmpl` instead" .chezmoi.sourceDir }}
 
+{{ $usage := promptString "usage (work|home)" }}
+
 {{ if eq .chezmoi.os "windows" }}
 # override default cmd.exe on windows
 cd:
@@ -10,7 +12,15 @@ cd:
 data:
   git:
     email: {{ promptString "git email" }}
-  usage: {{ promptString "usage (work|home)" }}
+  usage: {{ $usage }}
 
 diff:
   pager: delta
+
+keepassxc:
+  {{ if eq $usage "home" }}
+  args:
+    - --yubikey
+    - 2
+  {{ end }}
+  database: {{ promptString "KeePassXC database path" }}
