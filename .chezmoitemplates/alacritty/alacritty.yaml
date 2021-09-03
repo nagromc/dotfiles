@@ -1,0 +1,15 @@
+font:
+  normal:
+    family: FiraCode NF
+  size: 9.0
+{{- if eq .chezmoi.os "darwin" }}
+shell:
+  program: /bin/zsh
+  args:
+    - --login
+{{ end -}}
+{{- if eq .chezmoi.os "windows" }}
+shell:
+  program: pwsh
+working_directory: {{ .chezmoi.homeDir }}
+{{ end -}}
