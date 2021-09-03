@@ -11,3 +11,9 @@ tag_symbol = " tag:"
 [package]
 symbol = "pkg "
 {{ end -}}
+
+[shlvl]
+disabled = false
+{{- if eq .chezmoi.hostname "PC8043" }}
+symbol = "lvl "
+{{ end -}}
