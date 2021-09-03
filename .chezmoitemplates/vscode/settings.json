@@ -1,7 +1,11 @@
 {
+  "editor.bracketPairColorization.enabled": true,
   "editor.cursorBlinking": "smooth",
   "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorSurroundingLines": 5,
+  "editor.find.autoFindInSelection": "multiline",
   "editor.fontSize": 12,
+  "editor.formatOnPaste": true,
   "editor.renderWhitespace": "boundary",
   "files.autoSave": "onFocusChange",
   "search.smartCase": true,
