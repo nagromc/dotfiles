@@ -1,0 +1,6 @@
+alias cm='chezmoi'
+alias d='docker'
+alias g='git'
+alias v='vim'
+
+export EDITOR=subl
