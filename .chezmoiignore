@@ -1,5 +1,6 @@
 README.md
-.chocolatey/install-packages-windows.ps1
+.chocolatey/install-chocolatey-packages.ps1
+.scoop/install-scoop-packages.ps1
 
 {{ if ne .chezmoi.os "darwin" }}
 .config/alacritty
