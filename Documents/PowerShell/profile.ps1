@@ -25,5 +25,9 @@ Invoke-Expression (& { (just --completions powershell ) -join "`n" })
 Import-Module posh-git
 
 
+# chezmoi completions
+Invoke-Expression (& { (chezmoi completion powershell) -join "`n" })
+
+
 # count shell level
 $ENV:SHLVL = [int] $ENV:SHLVL + 1
