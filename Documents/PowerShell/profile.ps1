@@ -17,15 +17,9 @@ Invoke-Expression (&starship init powershell)
 Invoke-Expression (& { $hook = if ($PSVersionTable.PSVersion.Major -ge 6) { 'pwd' } else { 'prompt' } (zoxide init powershell --hook $hook) -join "`n" })
 
 
-# `just` completions
+# completions
 Invoke-Expression (& { (just --completions powershell ) -join "`n" })
-
-
-# git completions
 Import-Module posh-git
-
-
-# chezmoi completions
 Invoke-Expression (& { (chezmoi completion powershell) -join "`n" })
 
 
