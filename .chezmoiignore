@@ -16,4 +16,6 @@ AppData
 {{ else }}
 .config/alacritty
 .profile
+.zprofile
+.zshrc
 {{ end }}

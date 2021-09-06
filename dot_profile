@@ -1,6 +1,11 @@
+# aliases
 alias cm='chezmoi'
 alias d='docker'
 alias g='git'
 alias v='vim'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias ~='cd ~'
 
 export EDITOR=subl
