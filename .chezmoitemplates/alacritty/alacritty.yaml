@@ -2,6 +2,9 @@ font:
   normal:
     family: FiraCode NF
   size: 9.0
+key_bindings:
+  - { key: Insert, mods: Control, action: Copy }
+  - { key: Insert, mods: Shift, action: Paste }
 {{- if eq .chezmoi.os "darwin" }}
 shell:
   program: /bin/zsh
