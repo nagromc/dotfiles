@@ -23,6 +23,9 @@ Import-Module posh-git
 Invoke-Expression (& { (chezmoi completion powershell) -join "`n" })
 
 
-# count shell level
+
+$ENV:LESS = {{ .envvars.LESS | quote }}
+$ENV:PAGER = {{ .envvars.PAGER | quote }}
 $ENV:RIPGREP_CONFIG_PATH = "$ENV:USERPROFILE\.config\ripgrep\ripgreprc"
+# count shell level
 $ENV:SHLVL = [int] $ENV:SHLVL + 1
