@@ -1,0 +1,20 @@
+{
+"\UF729" = "moveToBeginningOfLine:"; /* Home */
+"\UF72B" = "moveToEndOfLine:"; /* End */
+"$\UF729" = "moveToBeginningOfLineAndModifySelection:"; /* Shift + Home */
+"$\UF72B" = "moveToEndOfLineAndModifySelection:"; /* Shift + End */
+"^\UF729" = "moveToBeginningOfDocument:"; /* Ctrl + Home */
+"^\UF72B" = "moveToEndOfDocument:"; /* Ctrl + End */
+"$^\UF729" = "moveToBeginningOfDocumentAndModifySelection:"; /* Shift + Ctrl + Home */
+"$^\UF72B" = "moveToEndOfDocumentAndModifySelection:"; /* Shift + Ctrl + End */
+"@\UF702"  = "moveWordBackward:"; /* Cmd + LeftArrow */
+"@\UF703"  = "moveWordForward:"; /* Cmd + RightArrow */
+"@$\UF702" = "moveWordBackwardAndModifySelection:"; /* Shift + Cmd + Leftarrow */
+"@$\UF703" = "moveWordForwardAndModifySelection:"; /* Shift + Cmd + Rightarrow */
+"#," = ("insertText:", "."); /* Remap numpad dot to a real dot (not a comma) */
+"^\UF746"  = "copy:"; /* Control + Help (Insert) */
+"$\UF746"  = "paste:"; /* Shift + Help (Insert) */
+"^\UF727" = "copy:"; /* Control + Insert */
+"$\UF727" = "paste:"; /* Shift + Insert */
+"^\UF728" = "cut:"; /* Control + Delete */
+}
