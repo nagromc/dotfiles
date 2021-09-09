@@ -108,8 +108,8 @@
   lglvv = "!sh -c 'git loggvv ${@}' -"
   # base log graph command
   logg = log --graph --abbrev-commit --decorate
-  loggv = log --graph --abbrev-commit --decorate --format=format:'%C(red)%h%C(reset) - %C(cyan)%aD%C(reset) %C(green)(%ar)%C(reset)%C(auto)%d%C(reset)%<(9)%n%C(blue)<%an> (%G?)%C(reset)%<(13)%n%s'
-  loggvv = log --graph --abbrev-commit --decorate --format=format:'%C(red)%h%C(reset) - %C(cyan)%aD [A]%C(reset) %C(green)(%ar)%C(reset) - %C(magenta)%cD [C]%C(reset) %C(green)(%cr)%C(reset) %C(auto)%d%C(reset)%<(9)%n%C(blue)<%an> [A]%C(reset) - %C(yellow)<%cn> [C] (%G?)%C(reset)%<(13)%n%s'
+  loggv = log --graph --abbrev-commit --decorate --format=format:'%C(red)%h%C(reset) - %C(cyan)%aD%C(reset) %C(green)(%ar)%C(reset)%C(auto)%d%C(reset)%<(9)%n%C(blue)%an (%G?)%C(reset)%<(13)%n%s'
+  loggvv = log --graph --abbrev-commit --decorate --format=format:'%C(red)%h%C(reset) - %C(cyan)%aD [A]%C(reset) %C(green)(%ar)%C(reset) - %C(magenta)%cD [C]%C(reset) %C(green)(%cr)%C(reset) %C(auto)%d%C(reset)%<(9)%n%C(blue)"%an" <%ae> [A]%C(reset) - %C(yellow)"%cn" <%ce> [C] (%G?)%C(reset)%<(13)%n%s'
   me = merge
   mea = merge --abort
   mec = merge --continue
@@ -226,7 +226,7 @@
   smudge = expand --tabs=2 --initial
   clean = unexpand --tabs=2 --first-only
 [format]
-  pretty = %C(red)%h%C(reset) -%C(auto)%d%C(reset) %s %C(green)(%ad)%C(reset) %C(blue)<%an>%C(reset)
+  pretty = %C(red)%h%C(reset) -%C(auto)%d%C(reset) %s %C(green)(%ad)%C(reset) %C(blue)[%an]%C(reset)
 [log]
   date = relative
 [merge]
