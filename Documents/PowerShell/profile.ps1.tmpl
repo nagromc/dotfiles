@@ -26,6 +26,7 @@ Invoke-Expression (& { (chezmoi completion powershell) -join "`n" })
 
 $ENV:LESS = {{ .envvars.LESS | quote }}
 $ENV:PAGER = {{ .envvars.PAGER | quote }}
+$Env:Path += ";$Env:UserProfile\.local\bin"
 $ENV:RIPGREP_CONFIG_PATH = "$ENV:USERPROFILE\.config\ripgrep\ripgreprc"
 # count shell level
 $ENV:SHLVL = [int] $ENV:SHLVL + 1
