@@ -14,5 +14,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: brew install chezmoi
-      - run: echo "work\ntest@example.org" | chezmoi init --apply --depth 0 nagromc
+      - run: echo "work\ntest@example.org\n/tmp/keepass.kdbx" | chezmoi init --apply --depth 0 nagromc
       - run: cat ~/.profile
