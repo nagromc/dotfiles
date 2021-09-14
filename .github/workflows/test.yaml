@@ -27,5 +27,6 @@ jobs:
       # - name: Upgrade homebrew
       #   run: cd "$(brew --repo)" && git fetch && git reset --hard origin/master && brew update
       - run: brew install chezmoi
-      - run: echo -e "work\nemail\nkeepass\n" | chezmoi init --apply --depth 0 nagromc
+      - run: echo -e "work\nemail\nkeepass\n" > $(chezmoi source-path)
+      - run: chezmoi init --apply --depth 1 nagromc
       - run: cat ~/.profile
