@@ -13,6 +13,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-
-      - name: Run a one-line script
-        run: brew --version
+      - run: brew install chezmoi
+      - run: chezmoi init --apply nagromc
+      - run: cat ~/.profile
