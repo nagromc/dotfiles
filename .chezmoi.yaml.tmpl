@@ -2,6 +2,8 @@
 {{ printf "# Edit `%s/.chezmoi.yaml.tmpl` instead" .chezmoi.sourceDir }}
 
 {{ $usage := promptString "usage (work|home)" }}
+{{ $email := promptString "git email" }}
+{{ $keepassdbpath := promptString "KeePassXC database path" }}
 
 {{ if eq .chezmoi.os "windows" }}
 # override default cmd.exe on windows
@@ -10,8 +12,8 @@ cd:
 {{ end }}
 
 data:
-  git:
-    email: {{ promptString "git email" }}
+  git: {{ $email }}
+    email:
   usage: {{ $usage }}
 
 diff:
@@ -23,4 +25,4 @@ keepassxc:
     - --yubikey
     - 2
   {{ end }}
-  database: {{ promptString "KeePassXC database path" }}
+  database: {{ $keepassdbpath }}
