@@ -27,5 +27,5 @@ jobs:
       # - name: Upgrade homebrew
       #   run: cd "$(brew --repo)" && git fetch && git reset --hard origin/master && brew update
       - run: brew install chezmoi
-      - run: chezmoi init --apply --branch=github-actions nagromc
+      - run: chezmoi init --apply --branch=github-actions --verbose nagromc
       - run: cat ~/.profile
