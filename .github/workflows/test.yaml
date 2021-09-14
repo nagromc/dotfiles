@@ -1,15 +1,15 @@
 name: CI
 
 on:
-  push:
-    branches: [ github-actions ]
+  # push:
+  #   branches: [ github-actions ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 jobs:
   install-dotfiles:
-    runs-on: windows-latest
+    runs-on: macos-latest
 
     steps:
       - uses: actions/checkout@v2
