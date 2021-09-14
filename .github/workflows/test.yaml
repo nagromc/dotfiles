@@ -24,8 +24,8 @@ jobs:
           key: homebrew-${{ runner.os }}
           restore-keys: |
             homebrew-${{ runner.os }}
-      - name: Upgrade homebrew
-        run: cd "$(brew --repo)" && git fetch && git reset --hard origin/master && brew update
+      # - name: Upgrade homebrew
+      #   run: cd "$(brew --repo)" && git fetch && git reset --hard origin/master && brew update
       - run: brew install chezmoi
-      - run: echo "work\ntest@example.org\n/tmp/keepass.kdbx" # | chezmoi init --apply --depth 0 nagromc
+      - run: echo -e "work\ntest@example.org\n/tmp/keepass.kdbx" # | chezmoi init --apply --depth 0 nagromc
       - run: cat ~/.profile
