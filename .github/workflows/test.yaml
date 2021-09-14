@@ -14,5 +14,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: brew install chezmoi
-      - run: chezmoi init --apply --depth 0 nagromc < work
+      - run: chezmoi init --apply --depth 0 nagromc < echo "work"
       - run: cat ~/.profile
