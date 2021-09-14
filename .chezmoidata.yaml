@@ -1,3 +1,7 @@
 envvars:
   LESS: --ignore-case --jump-target=5 --quit-if-one-screen --RAW-CONTROL-CHARS --shift=.2 --use-color
   PAGER: less
+data:
+  usage: work
+  email: chezmoi@example.org
+  keepassdbpath: keepass
