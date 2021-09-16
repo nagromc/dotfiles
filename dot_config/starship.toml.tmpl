@@ -7,6 +7,9 @@ tag_disabled = false
 tag_symbol = " tag:"
 {{ end }}
 
+[git_metrics]
+disabled = false
+
 {{- if eq .chezmoi.hostname "PC8043" }}
 [package]
 symbol = "pkg "
