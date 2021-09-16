@@ -13,6 +13,7 @@ Library
 
 {{ if ne .chezmoi.os "windows" }}
 AppData
+Documents/PowerShell
 {{ else }}
 .config/alacritty
 .bashrc
