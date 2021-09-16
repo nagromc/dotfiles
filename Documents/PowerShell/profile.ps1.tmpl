@@ -1,34 +1,4 @@
-# aliases
-New-Alias -Name cm -Value chezmoi
-New-Alias -Name d -Value docker
-New-Alias -Name g -Value git
-New-Alias -Name lg -Value lazygit
-New-Alias -Name list -Value Get-ChildItem
-
-
-# display possible completion with fzf instead of completing
-Set-PSReadLineKeyHandler -Key Tab -ScriptBlock { Invoke-FzfTabCompletion }
-
-
-# starship
-Invoke-Expression (&starship init powershell)
-
-
-# zoxide
-Invoke-Expression (& { $hook = if ($PSVersionTable.PSVersion.Major -ge 6) { 'pwd' } else { 'prompt' } (zoxide init powershell --hook $hook) -join "`n" })
-
-
-# completions
-Invoke-Expression (& { (just --completions powershell ) -join "`n" })
-Import-Module posh-git
-Invoke-Expression (& { (chezmoi completion powershell) -join "`n" })
-Invoke-Expression (& { (miniserve --print-completions powershell) -join "`n" })
-
-
-
-$Env:LESS = {{ .envvars.LESS | quote }}
-$Env:PAGER = {{ .envvars.PAGER | quote }}
-$Env:Path += ";$Env:UserProfile\.local\bin"
-$Env:RIPGREP_CONFIG_PATH = "$Env:USERPROFILE\.config\ripgrep\ripgreprc"
-# count shell level
-$Env:SHLVL = [int] $Env:SHLVL + 1
+. "$PSScriptRoot/aliases.ps1"
+. "$PSScriptRoot/completions.ps1"
+. "$PSScriptRoot/envvars.ps1"
+. "$PSScriptRoot/tools-integration.ps1"
