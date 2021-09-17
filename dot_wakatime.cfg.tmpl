@@ -1,0 +1,5 @@
+[settings]
+api_key = {{ .wakatimeapikey }}
+{{ if eq .usage "work" }}
+hide_file_names = true
+{{ end }}

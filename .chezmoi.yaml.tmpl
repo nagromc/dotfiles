@@ -16,6 +16,11 @@
 {{ $keepassxcpath = promptString "KeePassXC database path" }}
 {{ end }}
 
+{{ $wakatimeapikey := get . "wakatimeapikey" }}
+{{ if not $wakatimeapikey }}
+{{ $wakatimeapikey = keepassxcAttribute "WakaTime" "API key" }}
+{{ end }}
+
 {{ if eq .chezmoi.os "windows" }}
 # override default cmd.exe on windows
 cd:
@@ -26,6 +31,7 @@ data:
   gitemail: {{ $gitemail }}
   keepassxcpath: {{ $keepassxcpath }}
   usage: {{ $usage }}
+  wakatimeapikey: {{ $wakatimeapikey }}
 
 diff:
   pager: delta
