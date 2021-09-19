@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# vscode-extensions.txt hash: {{ include "dot_config/chezmoi/bin/vscode-extensions.txt" | sha256sum }}
 cat ../vscode-extensions.txt | while read extension || [[ -n $extension ]];
 do
   code --install-extension $extension --force
