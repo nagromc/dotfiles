@@ -1,0 +1,1 @@
+echo "Install prerequisite:`n- Chocolatey (https://chocolatey.org/install)`n- minimal dependencies (``choco install gsudo keepassxc``)"
