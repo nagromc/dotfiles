@@ -1,0 +1,38 @@
+Windows Registry Editor Version 5.00
+
+; contextual menu for a file
+[HKEY_CURRENT_USER\Software\Classes\*\shell\Open with &Sublime Text]
+@="Open with &Sublime Text"
+"Icon"="C:\\Program Files\\Sublime Text\\sublime_text.exe,0"
+[HKEY_CURRENT_USER\Software\Classes\*\shell\Open with &Sublime Text\command]
+@="\"C:\\Program Files\\Sublime Text\\sublime_text.exe\" \"%1\""
+
+; contextual menu for a directory
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\Open with &Sublime Text]
+@="Open with &Sublime Text"
+"Icon"="C:\\Program Files\\Sublime Text\\sublime_text.exe"
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\Open with &Sublime Text\command]
+@="\"C:\\Program Files\\Sublime Text\\sublime_text.exe\" \"%1\""
+
+; contextual menu for a directory background
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Open with &Sublime Text]
+@="Open with &Sublime Text"
+"Icon"="C:\\Program Files\\Sublime Text\\sublime_text.exe"
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Open with &Sublime Text\command]
+@="\"C:\\Program Files\\Sublime Text\\sublime_text.exe\" \"%V\""
+
+[HKEY_CURRENT_USER\Control Panel\Accessibility\Keyboard Response]
+; disable filter keys
+"Flags"="122"
+[HKEY_CURRENT_USER\Control Panel\Accessibility\ToggleKeys]
+; disable toggle keys
+"Flags"="58"
+[HKEY_CURRENT_USER\Control Panel\Accessibility\StickyKeys]
+; disable sticky keys
+"Flags"="506"
+[HKEY_CURRENT_USER\Control Panel\Keyboard]
+; shortest delay
+"KeyboardDelay"="0"
+[HKEY_CURRENT_USER\Control Panel\Keyboard]
+; maximun rate
+"KeyboardSpeed"="31"
