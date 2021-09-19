@@ -17,7 +17,7 @@
 {{ end }}
 
 {{ $wakatimeapikey := get . "wakatimeapikey" }}
-{{ if not $wakatimeapikey }}
+{{ if and (not $wakatimeapikey) (get . "keepassxcpath") }}
 {{ $wakatimeapikey = keepassxcAttribute "WakaTime" "API key" }}
 {{ end }}
 
