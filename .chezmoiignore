@@ -1,6 +1,4 @@
 README.md
-.chocolatey/install-chocolatey-packages.ps1
-.scoop/install-scoop-packages.ps1
 
 {{ if ne .chezmoi.os "darwin" }}
 Library
@@ -12,6 +10,8 @@ Library
 {{ end }}
 
 {{ if ne .chezmoi.os "windows" }}
+.chocolatey/install-chocolatey-packages.ps1
+.scoop/install-scoop-packages.ps1
 AppData
 Documents/PowerShell
 {{ else }}
