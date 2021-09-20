@@ -18,6 +18,7 @@ AppData
 Documents/PowerShell
 {{ else }}
 .config/alacritty
+.config/topgrade.toml
 .bashrc
 .profile
 .zprofile
