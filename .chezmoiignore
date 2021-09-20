@@ -11,9 +11,9 @@ Library
 {{ end }}
 
 {{ if ne .chezmoi.os "windows" }}
-.chocolatey/install-chocolatey-packages.ps1
-.config/chezmoi/bin/windows
-.scoop/install-scoop-packages.ps1
+.chocolatey/
+.config/chezmoi/bin/windows/
+.scoop/
 AppData
 Documents/PowerShell
 {{ else }}
