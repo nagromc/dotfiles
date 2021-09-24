@@ -119,6 +119,7 @@
   plum = pull upstream master
   ps = push
   psa = push --all
+  psd = push --delete origin
   psf = push --force
   pst = push --tags
   psu = "!sh -c 'git push --set-upstream origin $(git branch-name)' -"
@@ -130,10 +131,6 @@
   rem = remote
   # add a remote forked repo (e.g. `git remau https://github.com/user/forked-repo.git`)
   remau = remote add upstream
-  # delete a branch on the repo
-  remdbr = push --delete origin
-  # delete a tag on the repo. Yeah, this is the same alias for deleting a branch but my brain works like that okay?
-  remdt = push --delete origin
   # remove the deleted remote branches existing on the local repo
   remsyncbr = remote prune origin
   remv = remote -v
