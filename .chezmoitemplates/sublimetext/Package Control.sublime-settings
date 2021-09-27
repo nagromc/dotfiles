@@ -6,6 +6,8 @@
   "installed_packages":
   [
     "EditorConfig",
+    "INI",
+    "JSON Reindent",
     "Package Control",
     "WakaTime",
   ],
