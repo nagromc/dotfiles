@@ -2,7 +2,7 @@
 // and are overridden in turn by syntax-specific settings.
 {
   "caret_style": "smooth",
-  "color_scheme": "Packages/Color Scheme - Default/Mariana.sublime-color-scheme",
+  "color_scheme": "Monokai Classic.sublime-color-scheme",
   "draw_white_space": ["selection", "trailing", "isolated"],
   "font_face": "Cascadia Code",
   "font_options": ["ss01"],
