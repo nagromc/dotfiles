@@ -11,6 +11,7 @@
   "editor.renderWhitespace": "boundary",
   "files.autoSave": "onFocusChange",
   "search.smartCase": true,
+  "telemetry.telemetryLevel": "off",
   "terminal.integrated.fontFamily": "'Cascadia Code PL', 'FiraCode NF', monospace",
   "terminal.integrated.fontSize": 12,
   "workbench.colorTheme": "Monokai",
