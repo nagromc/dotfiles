@@ -4,6 +4,7 @@
   "editor.cursorSmoothCaretAnimation": true,
   "editor.cursorSurroundingLines": 5,
   "editor.find.autoFindInSelection": "multiline",
+  "editor.fontLigatures": true,
   "editor.fontFamily": "'Cascadia Code', 'Consolas', monospace",
   "editor.fontSize": 12,
   "editor.formatOnPaste": true,
