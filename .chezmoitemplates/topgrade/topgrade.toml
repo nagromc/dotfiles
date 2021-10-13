@@ -1,3 +1,5 @@
+{{ "# documentation can be found here: https://github.com/r-darwish/topgrade/blob/develop/config.example.toml" }}
+
 {{ if eq .chezmoi.os "darwin" }}
 disable = ["tlmgr"]
 {{ end }}
