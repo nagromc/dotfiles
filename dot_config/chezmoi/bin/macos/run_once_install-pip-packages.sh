@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-pip install --requirement "../pip-requirements.txt"
+pip3 install --requirement "../pip-requirements.txt"
