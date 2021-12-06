@@ -3,3 +3,5 @@
 {{ if eq .chezmoi.os "darwin" }}
 disable = ["tlmgr"]
 {{ end }}
+
+no_retry = true
