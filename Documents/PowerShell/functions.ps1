@@ -1,3 +1,35 @@
+function .. {
+  <#
+.SYNOPSIS
+`cd` to parent directory
+#>
+  Set-Location ..
+}
+
+function ... {
+  <#
+.SYNOPSIS
+`cd` to grandparent directory
+#>
+  Set-Location ../..
+}
+
+function .... {
+  <#
+.SYNOPSIS
+`cd` to great-grandparent directory
+#>
+  Set-Location ../../..
+}
+
+function ..... {
+  <#
+.SYNOPSIS
+`cd` to great-great-grandparent directory
+#>
+  Set-Location ../../../..
+}
+
 function mkcd {
 <#
 .SYNOPSIS
