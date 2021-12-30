@@ -5,3 +5,6 @@ disable = ["tlmgr"]
 {{ end }}
 
 no_retry = true
+
+[windows]
+self_rename = true
