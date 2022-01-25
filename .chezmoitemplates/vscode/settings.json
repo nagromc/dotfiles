@@ -9,6 +9,7 @@
   "editor.fontSize": 12,
   "editor.formatOnPaste": true,
   "editor.renderWhitespace": "boundary",
+  "editor.smoothScrolling": true,
   "files.autoSave": "onFocusChange",
   "search.smartCase": true,
   "telemetry.telemetryLevel": "off",
