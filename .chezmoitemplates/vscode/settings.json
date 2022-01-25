@@ -21,6 +21,5 @@
   "telemetry.telemetryLevel": "off",
   "terminal.integrated.fontFamily": "'Cascadia Code PL', 'FiraCode NF', monospace",
   "terminal.integrated.fontSize": 12,
-  "workbench.colorTheme": "Monokai",
   "workbench.startupEditor": "none",
 }
