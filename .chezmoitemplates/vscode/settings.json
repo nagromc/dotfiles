@@ -11,6 +11,12 @@
   "editor.renderWhitespace": "boundary",
   "editor.smoothScrolling": true,
   "files.autoSave": "onFocusChange",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
   "search.smartCase": true,
   "telemetry.telemetryLevel": "off",
   "terminal.integrated.fontFamily": "'Cascadia Code PL', 'FiraCode NF', monospace",
