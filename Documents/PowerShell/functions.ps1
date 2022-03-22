@@ -30,6 +30,14 @@ function ..... {
   Set-Location ../../../..
 }
 
+function envvar {
+<#
+.SYNOPSIS
+Opens the `Edit environment variables` panel
+#>
+  rundll32.exe sysdm.cpl,EditEnvironmentVariables
+}
+
 function mkcd {
 <#
 .SYNOPSIS
