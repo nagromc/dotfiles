@@ -26,6 +26,7 @@
   ciamns = commit --all --no-gpg-sign --message
   cias = commit --all --gpg-sign
   cians = commit --all --no-gpg-sign
+  cif = commit --fixup
   cim = commit --message
   cims = commit --gpg-sign --message
   cimns = commit --no-gpg-sign --message
@@ -245,6 +246,7 @@
   gpgSign = if-asked
 [rebase]
   autoStash = true
+  autoSquash = true
 [status]
   branch = true
   short = true
