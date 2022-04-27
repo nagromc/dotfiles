@@ -10,5 +10,10 @@ disabled = false
 [localip]
 disabled = false
 
+{{ if eq .chezmoi.hostname "PC8052" -}}
+[shell]
+disabled = false
+{{- end }}
+
 [shlvl]
 disabled = false
