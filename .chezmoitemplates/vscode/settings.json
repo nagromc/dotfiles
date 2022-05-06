@@ -8,6 +8,7 @@
   "editor.fontLigatures": "'ss01'",
   "editor.fontSize": 12,
   "editor.formatOnPaste": true,
+  "editor.guides.bracketPairs": "active",
   "editor.renderWhitespace": "boundary",
   "editor.smoothScrolling": true,
   "explorer.confirmDelete": false,
