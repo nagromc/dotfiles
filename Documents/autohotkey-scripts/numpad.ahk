@@ -63,6 +63,8 @@
                                           VKBC::Numpad2  ; ,
                                                               VKBE::Numpad3  ; .
   VK20::Numpad0  ; Space
+  ; on AltGr+Space, send Space
+  <^>!VK20::Send {Space}
   VKBD::-  ; -
   VKBB::+  ; =
   VKDB::/  ; [
