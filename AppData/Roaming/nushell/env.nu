@@ -1,4 +1,4 @@
-let-env SHLVL = if (env | where name == SHLVL | empty?) {
+let-env SHLVL = if (env | where name == SHLVL | is-empty) {
   1
 } else {
   ($env.SHLVL | into int) + 1
