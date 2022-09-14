@@ -6,6 +6,8 @@
 »::Send >
 <^>!»::Send {Text}»
 
-; swap 'z' and 'w' keys
-z::w
-w::z
+; swap 'à' and 'w' characters
+à::Send {Text}w
+w::Send {Text}à
++à::Send {Text}W
++w::Send {Text}À
