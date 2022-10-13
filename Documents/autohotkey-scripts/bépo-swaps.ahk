@@ -11,3 +11,6 @@
 w::Send {Text}à
 +à::Send {Text}W
 +w::Send {Text}À
+
+; upon Shift+Space, send regular space instead of `narrow no-break space (U+202F)`
++Space::Send {Space}
