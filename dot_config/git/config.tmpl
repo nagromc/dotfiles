@@ -121,7 +121,8 @@
   ps = push
   psa = push --all
   psd = push --delete origin
-  psf = push --force
+  psf = push --force-with-lease
+  psff = push --force
   pst = push --tags
   psu = "!sh -c 'git push --set-upstream origin $(git branch-name)' -"
   rb = rebase
