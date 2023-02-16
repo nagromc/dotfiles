@@ -8,6 +8,7 @@
   "font_options": ["ss01"],
   "font_size": 9,
   "hardware_acceleration": "opengl",
+  "hide_tab_scrolling_buttons": true,
   "highlight_line": true,
   "ignored_packages":
   [
