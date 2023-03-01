@@ -1,0 +1,18 @@
+{
+  "files.associations": {
+    "**/.chezmoi.yaml.tmpl": "yaml",
+    "**/.chezmoiignore": "plaintext",
+    "**/.chezmoitemplates/sublimetext/Preferences.sublime-settings": "jsonc",
+    "**/Documents/PowerShell/envvars.ps1.tmpl": "powershell",
+    "**/Documents/PowerShell/profile.ps1.tmpl": "powershell",
+    "**/dot_aliases": "shellscript",
+    "**/dot_bashrc": "shellscript",
+    "**/dot_config/git/config.tmpl": "properties",
+    "**/dot_config/starship.toml.tmpl": "powershell",
+    "**/dot_editorconfig": "editorconfig",
+    "**/dot_profile.tmpl": "shellscript",
+    "**/dot_zprofile": "shellscript",
+    "**/dot_zshrc": "shellscript",
+    "**/private_dot_ssh/config.tmpl": "ssh_config",
+  }
+}
