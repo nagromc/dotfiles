@@ -1,0 +1,1 @@
+mrco: mr checkout $1 --branch mr/$1
