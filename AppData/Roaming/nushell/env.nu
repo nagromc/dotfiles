@@ -8,3 +8,6 @@ zoxide init nushell | save --force ~/.config/zoxide.nu
 
 mkdir ~/.cache/starship
 starship init nu | save --force ~/.cache/starship/init.nu
+
+let-env EDITOR = 'micro'
+let-env VISUAL = 'micro'
