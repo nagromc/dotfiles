@@ -1,5 +1,5 @@
 function .. {
-  <#
+<#
 .SYNOPSIS
 `cd` to parent directory
 #>
@@ -7,7 +7,7 @@ function .. {
 }
 
 function ... {
-  <#
+<#
 .SYNOPSIS
 `cd` to grandparent directory
 #>
@@ -15,7 +15,7 @@ function ... {
 }
 
 function .... {
-  <#
+<#
 .SYNOPSIS
 `cd` to great-grandparent directory
 #>
@@ -23,7 +23,7 @@ function .... {
 }
 
 function ..... {
-  <#
+<#
 .SYNOPSIS
 `cd` to great-great-grandparent directory
 #>
@@ -51,7 +51,7 @@ Creates a directory, then `cd` into
 }
 
 function mkcdtmp {
-  <#
+<#
 .SYNOPSIS
 Creates a directory in `$Env:TEMP` with a random name, then `cd` into
 #>
