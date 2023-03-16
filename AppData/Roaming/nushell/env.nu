@@ -10,4 +10,5 @@ mkdir ~/.cache/starship
 starship init nu | save --force ~/.cache/starship/init.nu
 
 let-env EDITOR = 'micro'
+let-env RIPGREP_CONFIG_PATH = $nu.home-path + "/.config/ripgrep/ripgreprc"
 let-env VISUAL = 'micro'
