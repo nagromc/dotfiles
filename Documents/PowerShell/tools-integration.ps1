@@ -10,3 +10,6 @@ Invoke-Expression (& { $hook = if ($PSVersionTable.PSVersion.Major -ge 6) { 'pwd
 # add icons to `dir`
 # https://github.com/devblackops/Terminal-Icons must be installed with `scoop install terminal-icons`
 Import-Module Terminal-Icons
+
+# broot
+. "$env:APPDATA/dystroy/broot/config/launcher/powershell/br.ps1"
