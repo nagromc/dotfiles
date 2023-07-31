@@ -26,3 +26,7 @@ def-env mkcdtmp [
 ] {
   mkcd $"($env.TEMP)/($path)"
 }
+
+$env.config = {
+  edit_mode: vi
+}
