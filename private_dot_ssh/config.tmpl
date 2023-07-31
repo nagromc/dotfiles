@@ -4,3 +4,7 @@ Host github.com
   Port 443
   User git
 {{ end }}
+{{ if eq .chezmoi.os "darwin" }}
+Host *
+  IdentityAgent "~/Library/Group Containers/group.strongbox.mac.mcguill/agent.sock"
+{{ end }}
