@@ -13,9 +13,9 @@ Library
 {{ if ne .chezmoi.os "windows" }}
 .chocolatey/
 .config/chezmoi/bin/windows/
-.scoop/
 AppData
 Documents/PowerShell
+scoop/
 {{ else }}
 .config/alacritty
 .config/topgrade.toml
