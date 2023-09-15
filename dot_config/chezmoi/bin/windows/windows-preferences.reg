@@ -24,15 +24,19 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Control Panel\Accessibility\Keyboard Response]
 ; disable filter keys
 "Flags"="122"
+
 [HKEY_CURRENT_USER\Control Panel\Accessibility\ToggleKeys]
 ; disable toggle keys
 "Flags"="58"
+
 [HKEY_CURRENT_USER\Control Panel\Accessibility\StickyKeys]
 ; disable sticky keys
 "Flags"="506"
+
 [HKEY_CURRENT_USER\Control Panel\Keyboard]
 ; shortest delay
 "KeyboardDelay"="0"
+
 [HKEY_CURRENT_USER\Control Panel\Keyboard]
 ; maximun rate
 "KeyboardSpeed"="31"
