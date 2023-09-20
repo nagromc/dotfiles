@@ -1,4 +1,5 @@
 {
+  "diffEditor.hideUnchangedRegions.enabled": true,
   "editor.bracketPairColorization.enabled": true,
   "editor.cursorBlinking": "smooth",
   "editor.cursorSmoothCaretAnimation": "on",
