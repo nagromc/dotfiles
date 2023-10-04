@@ -1,5 +1,6 @@
 {
   "files.associations": {
+    "**/*.reg.tmpl": "reg",
     "**/.chezmoi.yaml.tmpl": "yaml",
     "**/.chezmoiignore": "plaintext",
     "**/.chezmoitemplates/sublimetext/Preferences.sublime-settings": "jsonc",
