@@ -23,6 +23,9 @@
   "shift_tab_unindent": true,
   "show_encoding": true,
   "show_line_endings": true,
+  {{- if eq .chezmoi.os "windows" }}
+  "sublime_merge_path": "{{ .chezmoi.homeDir }}/scoop/apps/sublime-merge/current/sublime_merge.exe",
+  {{- end }}
   "theme": "Adaptive.sublime-theme",
   "update_check": false,
 }
