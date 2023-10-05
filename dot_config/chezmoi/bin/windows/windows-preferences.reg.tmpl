@@ -21,6 +21,20 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Open with &Sublime Text\command]
 @="\"{{ .chezmoi.homeDir | replaceAllRegex "/" "\\\\" }}\\scoop\\apps\\sublime-text\\current\\sublime_text.exe\" \"%V\""
 
+; contextual menu for a directory
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\Open with &Sublime Merge]
+@="Open with &Sublime Merge"
+"Icon"="{{ .chezmoi.homeDir | replaceAllRegex "/" "\\\\" }}\\scoop\\apps\\sublime-merge\\current\\sublime_merge.exe"
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\Open with &Sublime Merge\command]
+@="\"{{ .chezmoi.homeDir | replaceAllRegex "/" "\\\\" }}\\scoop\\apps\\sublime-merge\\current\\sublime_merge.exe\" \"%1\""
+
+; contextual menu for a directory background
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Open with &Sublime Merge]
+@="Open with &Sublime Merge"
+"Icon"="{{ .chezmoi.homeDir | replaceAllRegex "/" "\\\\" }}\\scoop\\apps\\sublime-merge\\current\\sublime_merge.exe"
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Open with &Sublime Merge\command]
+@="\"{{ .chezmoi.homeDir | replaceAllRegex "/" "\\\\" }}\\scoop\\apps\\sublime-merge\\current\\sublime_merge.exe\" \"%V\""
+
 [HKEY_CURRENT_USER\Control Panel\Accessibility\Keyboard Response]
 ; disable filter keys
 "Flags"="122"
