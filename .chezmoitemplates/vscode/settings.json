@@ -26,5 +26,7 @@
   "telemetry.telemetryLevel": "off",
   "terminal.integrated.fontFamily": "'Cascadia Code PL', 'FiraCode NF', monospace",
   "terminal.integrated.fontSize": 12,
+  "update.enableWindowsBackgroundUpdates": false,
+  "update.mode": "none",
   "workbench.startupEditor": "none",
 }
