@@ -24,6 +24,10 @@
   },
   "search.smartCase": true,
   "telemetry.telemetryLevel": "off",
+  "terminal.integrated.automationProfile.windows": {
+    // `%ComSpec%` is generally located at `C:\Windows\System32\cmd.exe`
+    "path": "${env:ComSpec}"
+  },
   "terminal.integrated.defaultProfile.windows": "PowerShell Core (Scoop)",
   "terminal.integrated.fontSize": 12,
   "terminal.integrated.profiles.windows": {
