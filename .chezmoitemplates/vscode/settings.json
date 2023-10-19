@@ -24,8 +24,17 @@
   },
   "search.smartCase": true,
   "telemetry.telemetryLevel": "off",
+  "terminal.integrated.defaultProfile.windows": "PowerShell Core (Scoop)",
   "terminal.integrated.fontFamily": "'Cascadia Code PL', 'FiraCode NF', monospace",
   "terminal.integrated.fontSize": 12,
+  "terminal.integrated.profiles.windows": {
+    "Nu": {
+      "path": "${env:USERPROFILE}/scoop/shims/nu.exe"
+    },
+    "PowerShell Core (Scoop)": {
+      "path": "${env:USERPROFILE}/scoop/shims/pwsh.exe"
+    },
+  },
   "update.enableWindowsBackgroundUpdates": false,
   "update.mode": "none",
   "workbench.startupEditor": "none",
