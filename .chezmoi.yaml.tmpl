@@ -41,6 +41,6 @@ keepassxc:
   {{ if eq $usage "home" }}
   args:
     - --yubikey
-    - 2
+    - "2"
   {{ end }}
   database: {{ $keepassxcpath }}
