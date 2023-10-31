@@ -1,23 +1,23 @@
-{{/* The following comment line *will* be inserted in the final file */}}
+{{/* The following comment line *will* be inserted in the final file */ -}}
 {{ "# Do *not* edit this file as it will be overwritten on next `chezmoi init` call." }}
-{{ printf "# Edit `%s/.chezmoi.yaml.tmpl` instead" .chezmoi.sourceDir }}
+{{ printf "# Edit `%s/.chezmoi.yaml.tmpl` instead" .chezmoi.sourceDir -}}
 
-{{ $gitemail := promptStringOnce . "gitemail" "Git e-mail" }}
+{{ $gitemail := promptStringOnce . "gitemail" "Git e-mail" -}}
 
-{{ $usage := promptStringOnce . "usage" "Usage (work|home)" }}
+{{ $usage := promptStringOnce . "usage" "Usage (work|home)" -}}
 
-{{ $keepassxcpath := promptStringOnce . "keepassxcpath" "KeePassXC database path" }}
+{{ $keepassxcpath := promptStringOnce . "keepassxcpath" "KeePassXC database path" -}}
 
-{{ $wakatimeapikey := get . "wakatimeapikey" }}
-{{ if and (not $wakatimeapikey) (get . "keepassxcpath") }}
-{{ $wakatimeapikey := keepassxcAttribute "WakaTime" "API key" }}
+{{ $wakatimeapikey := get . "wakatimeapikey" -}}
+{{ if and (not $wakatimeapikey) (get . "keepassxcpath") -}}
+{{ $wakatimeapikey := keepassxcAttribute "WakaTime" "API key" -}}
 {{ end }}
 
-{{ if eq .chezmoi.os "windows" }}
+{{ if eq .chezmoi.os "windows" -}}
 # override default cmd.exe on windows
 cd:
   command: pwsh
-{{ end }}
+{{- end }}
 
 data:
   gitemail: {{ $gitemail }}
