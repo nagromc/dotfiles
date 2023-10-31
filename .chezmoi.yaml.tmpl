@@ -2,24 +2,15 @@
 {{ "# Do *not* edit this file as it will be overwritten on next `chezmoi init` call." }}
 {{ printf "# Edit `%s/.chezmoi.yaml.tmpl` instead" .chezmoi.sourceDir }}
 
-{{ $gitemail := get . "gitemail" }}
-{{ if not $gitemail }}
-{{ $gitemail = promptString "Git e-mail" }}
-{{ end }}
+{{ $gitemail := promptStringOnce . "gitemail" "Git e-mail" }}
 
-{{ $usage := get . "usage" }}
-{{ if not $usage }}
-{{ $usage = promptString "Usage (work|home)" }}
-{{ end }}
+{{ $usage := promptStringOnce . "usage" "Usage (work|home)" }}
 
-{{ $keepassxcpath := get . "keepassxcpath" }}
-{{ if not $keepassxcpath }}
-{{ $keepassxcpath = promptString "KeePassXC database path" }}
-{{ end }}
+{{ $keepassxcpath := promptStringOnce . "keepassxcpath" "KeePassXC database path" }}
 
 {{ $wakatimeapikey := get . "wakatimeapikey" }}
 {{ if and (not $wakatimeapikey) (get . "keepassxcpath") }}
-{{ $wakatimeapikey = keepassxcAttribute "WakaTime" "API key" }}
+{{ $wakatimeapikey := keepassxcAttribute "WakaTime" "API key" }}
 {{ end }}
 
 {{ if eq .chezmoi.os "windows" }}
