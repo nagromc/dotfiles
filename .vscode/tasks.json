@@ -10,6 +10,9 @@
       "group": {
         "kind": "build",
         "isDefault": true
+      },
+      "presentation":{
+        "focus": true,
       }
     }
   ]
