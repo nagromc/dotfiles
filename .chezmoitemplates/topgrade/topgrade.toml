@@ -9,5 +9,7 @@ disable = ["gem"]
 
 no_retry = true
 
+no_self_update = true
+
 [windows]
 self_rename = true
