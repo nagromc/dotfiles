@@ -1,11 +1,7 @@
 [misc]
 {{ "# documentation can be found here: https://github.com/topgrade-rs/topgrade/blob/master/config.example.toml" }}
 
-{{ if eq .chezmoi.os "darwin" }}
 disable = ["gem", "tlmgr"]
-{{ else }}
-disable = ["gem"]
-{{ end }}
 
 no_retry = true
 
