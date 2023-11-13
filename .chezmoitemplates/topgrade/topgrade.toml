@@ -1,7 +1,7 @@
 [misc]
 {{ "# documentation can be found here: https://github.com/topgrade-rs/topgrade/blob/master/config.example.toml" }}
 
-disable = ["gem", "tlmgr"]
+disable = ["gem", "tlmgr", "vagrant"]
 
 no_retry = true
 
