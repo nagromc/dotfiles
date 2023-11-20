@@ -3,7 +3,7 @@
 {
   "caret_style": "smooth",
   "color_scheme": "Monokai Classic.sublime-color-scheme",
-  "draw_white_space": ["selection", "trailing", "isolated"],
+  "draw_white_space": ["all_mixed", "selection", "trailing", "isolated"],
   "font_face": "Cascadia Code",
   "font_options": ["ss01"],
   "font_size": 9,
