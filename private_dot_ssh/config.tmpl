@@ -6,5 +6,5 @@ Host github.com
 {{ end }}
 {{ if eq .chezmoi.os "darwin" }}
 Host *
-  IdentityAgent "~/Library/Group Containers/group.strongbox.mac.mcguill/agent.sock"
+  IdentityAgent ~/.strongbox/agent.sock
 {{ end }}
