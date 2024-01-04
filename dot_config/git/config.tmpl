@@ -207,6 +207,9 @@
   attributesFile = ~/.config/git/gitattributes_global
   editor = micro
   excludesfile = ~/.config/git/gitignore_global
+  {{- if eq .chezmoi.os "windows" }}
+  sshCommand = {{ joinPath (env "windir") "/System32/OpenSSH/ssh.exe" | replaceAllRegex "\\\\" "/" }}
+  {{- end }}
   whitespace = blank-at-eol,space-before-tab,tab-in-indent,blank-at-eof
 [delta]
   line-numbers = true
