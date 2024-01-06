@@ -66,26 +66,36 @@ packages:
       - yubico-yubikey-personalization-gui
   windows:
     scoop:
-      - 7zip
-      - beyondcompare
-      - broot
-      - chezmoi
-      - delta
-      - dockercompletion
-      - gh
-      - git
-      - glab
-      - just
-      - keepassxc
-      - posh-docker
-      - posh-git
-      - pwsh
-      - ripgrep
-      - starship
-      - sublime-merge
-      - sublime-text
-      - terminal-icons
-      - topgrade
-      - vscode
-      - windows-terminal
-      - zoxide
+      packages:
+        - 7zip
+        - beyondcompare
+        - broot
+        - chezmoi
+        - delta
+        - dockercompletion
+        - gh
+        - git
+        - glab
+        - just
+        - keepassxc
+        - posh-docker
+        - posh-git
+        - pwsh
+        - ripgrep
+        - starship
+        - sublime-merge
+        - sublime-text
+        - terminal-icons
+        - topgrade
+        - vscode
+        - windows-terminal
+        - zoxide
+      contextMenus:
+        beyondcompare:
+          - install-context.reg
+        sublime-text:
+          - install-context.reg
+        vscode:
+          - install-context.reg
+        windows-terminal:
+          - install-context.reg

@@ -1,0 +1,5 @@
+{{ range $appName, $regFiles := .packages.windows.scoop.contextMenus -}}
+  {{ range $regFiles -}}
+    reg import `"{{ joinPath (env "USERPROFILE") "scoop" "apps" $appName "current" . }}`"
+  {{ end -}}
+{{ end -}}

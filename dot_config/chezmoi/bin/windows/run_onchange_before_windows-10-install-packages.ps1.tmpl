@@ -2,7 +2,7 @@
 scoop bucket add extras
 scoop bucket add java
 scoop install `
-{{ range .packages.windows.scoop -}}
+{{ range .packages.windows.scoop.packages -}}
   {{ . | quote }} `
 {{ end -}}
 {{ end -}}
