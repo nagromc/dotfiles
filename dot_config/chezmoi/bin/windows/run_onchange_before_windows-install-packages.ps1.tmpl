@@ -1,0 +1,8 @@
+{{ if eq .chezmoi.os "windows" -}}
+scoop bucket add extras
+scoop bucket add java
+scoop install `
+{{ range .packages.windows.scoop -}}
+  {{ . | quote }} `
+{{ end -}}
+{{ end -}}

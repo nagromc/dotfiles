@@ -64,3 +64,28 @@ packages:
       - warp
       - yubico-yubikey-manager
       - yubico-yubikey-personalization-gui
+  windows:
+    scoop:
+      - 7zip
+      - beyondcompare
+      - broot
+      - chezmoi
+      - delta
+      - dockercompletion
+      - gh
+      - git
+      - glab
+      - just
+      - keepassxc
+      - posh-docker
+      - posh-git
+      - pwsh
+      - ripgrep
+      - starship
+      - sublime-merge
+      - sublime-text
+      - terminal-icons
+      - topgrade
+      - vscode
+      - windows-terminal
+      - zoxide
