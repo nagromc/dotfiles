@@ -9,7 +9,7 @@ The old version of my dotfiles repo can be found [here](https://github.com/nagro
 On Windows:
 
 ```powershell
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser ; '$params = "-BinDir $Env:TEMP"', (irm -useb https://get.chezmoi.io/ps1) | powershell -c - ; $env:PATH += "$env:USERPROFILE/scoop/shims" ; powershell -c "& '$Env:TEMP/chezmoi.exe' init --apply nagromc"
+Invoke-RestMethod -Uri https://raw.githubusercontent.com/nagromc/dotfiles/main/bootstrap.ps1 | Invoke-Expression
 ```
 
 ## Applying configuration to target environment
