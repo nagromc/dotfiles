@@ -1,6 +1,7 @@
 {{ if eq .chezmoi.os "windows" -}}
 scoop bucket add extras
 scoop bucket add java
+scoop bucket add nerd-fonts
 scoop install `
 {{ range .packages.windows.scoop.packages -}}
   {{ . | quote }} `
