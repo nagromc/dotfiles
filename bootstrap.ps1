@@ -3,7 +3,7 @@ function SetRemoteSignedExecutionPolicy {
 }
 
 function InstallScoop {
-  '$params = "-BinDir $Env:TEMP"', (irm -useb https://get.chezmoi.io/ps1) | powershell -c -
+  '$params = "-BinDir $Env:TEMP"', (Invoke-RestMethod -Uri https://get.chezmoi.io/ps1) | Invoke-Expression
 }
 
 function AddScoopToPath {
