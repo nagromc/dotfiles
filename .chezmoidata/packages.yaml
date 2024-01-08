@@ -71,13 +71,23 @@ packages:
         - beyondcompare
         - broot
         - chezmoi
+        - curl
         - delta
+        - difftastic
         - dockercompletion
+        - dua
+        - fd
+        - fzf
         - gh
         - git
         - glab
+        - gsudo
         - just
         - keepassxc
+        - neovide
+        - neovim
+        - notepadplusplus
+        - nu
         - posh-docker
         - posh-git
         - pwsh
@@ -85,6 +95,7 @@ packages:
         - starship
         - sublime-merge
         - sublime-text
+        - sumatrapdf
         - terminal-icons
         - topgrade
         - vscode
@@ -92,6 +103,8 @@ packages:
         - zoxide
       contextMenus:
         beyondcompare:
+          - install-context.reg
+        notepadplusplus:
           - install-context.reg
         sublime-text:
           - install-context.reg
