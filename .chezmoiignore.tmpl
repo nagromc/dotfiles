@@ -2,7 +2,7 @@
 README.md
 
 {{ if ne .chezmoi.os "darwin" }}
-.chezmoiscripts/macos
+.chezmoiscripts/macos/**
 .strongbox
 Library
 {{ end }}
@@ -13,7 +13,7 @@ Library
 {{ end }}
 
 {{ if ne .chezmoi.os "windows" }}
-.chezmoiscripts/windows/
+.chezmoiscripts/windows/**
 .chocolatey/
 AppData
 Documents/autohotkey-scripts
