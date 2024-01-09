@@ -1,10 +1,9 @@
-{{ if eq .chezmoi.os "windows" -}}
 scoop bucket add extras
 scoop bucket add java
 scoop bucket add nerd-fonts
 scoop bucket add morgan https://github.com/nagromc/scoop-bucket
+
 scoop install `
 {{ range .packages.windows.scoop.packages -}}
   {{ . | quote }} `
-{{ end -}}
 {{ end -}}
