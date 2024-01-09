@@ -1,0 +1,10 @@
+{
+  "configurations": [
+    {
+      "name": "chezmoi apply",
+      "type": "command",
+      "program": "chezmoi",
+      "args": ["apply"]
+    }
+  ]
+}
