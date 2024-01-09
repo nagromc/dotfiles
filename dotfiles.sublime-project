@@ -1,0 +1,15 @@
+{
+  "folders":
+  [
+    {
+      "path": "."
+    }
+  ],
+  "build_systems":
+  [
+    {
+      "name": "chezmoi apply",
+      "shell_cmd": "chezmoi apply"
+    },
+  ]
+}
