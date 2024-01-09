@@ -1,0 +1,5 @@
+vscode:
+  extensions:
+    - editorconfig.editorconfig
+    - ms-vscode.powershell
+    - wakatime.vscode-wakatime

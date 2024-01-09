@@ -1,2 +1,3 @@
-# vscode-extensions.txt hash: {{ include "dot_config/chezmoi/bin/vscode-extensions.txt" | sha256sum }}
-Get-Content "../vscode-extensions.txt" | ForEach-Object { code --install-extension $_ --force }
+{{ range .vscode.extensions -}}
+  code --install-extension --force {{ . }}
+{{ end -}}
