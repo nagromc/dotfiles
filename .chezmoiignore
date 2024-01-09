@@ -1,4 +1,4 @@
-.chezmoiscripts/data/**
+.chezmoiscriptsdata/
 README.md
 
 {{ if ne .chezmoi.os "darwin" }}
