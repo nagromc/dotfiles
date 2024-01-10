@@ -23,6 +23,7 @@
     "**/.factorypath": true
   },
   "git.autofetch": true,
+  "git.autofetchPeriod": 3600,
   "git.inputValidation": "warn",
   "search.smartCase": true,
   "telemetry.telemetryLevel": "off",
