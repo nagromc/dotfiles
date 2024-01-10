@@ -23,6 +23,7 @@
     "**/.factorypath": true
   },
   "git.autofetch": true,
+  "git.inputValidation": "warn",
   "search.smartCase": true,
   "telemetry.telemetryLevel": "off",
   "terminal.integrated.automationProfile.windows": {
