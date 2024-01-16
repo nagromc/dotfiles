@@ -73,6 +73,7 @@ packages:
         - Cascadia-Code
         - CascadiaCode-NF
         - chezmoi
+        - clink
         - curl
         - delta
         - difftastic
