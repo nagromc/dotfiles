@@ -1,6 +1,2 @@
-# sublime-merge-contextual-menu.reg hash: {{ include "dot_local/share/chezmoi-scripts-data/windows/sublime-merge-contextual-menu.reg.tmpl" | sha256sum }}
-# sublime-text-contextual-menu.reg hash: {{ include "dot_local/share/chezmoi-scripts-data/windows/sublime-text-contextual-menu.reg.tmpl" | sha256sum }}
 # windows-preferences.reg hash: {{ include "dot_local/share/chezmoi-scripts-data/windows/windows-preferences.reg" | sha256sum }}
-reg import {{ .chezmoi.homeDir }}\.local\share\chezmoi-scripts-data\windows\sublime-merge-contextual-menu.reg
-reg import {{ .chezmoi.homeDir }}\.local\share\chezmoi-scripts-data\windows\sublime-text-contextual-menu.reg
 reg import {{ .chezmoi.homeDir }}\.local\share\chezmoi-scripts-data\windows\windows-preferences.reg
