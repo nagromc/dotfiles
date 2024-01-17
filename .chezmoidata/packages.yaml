@@ -68,6 +68,7 @@ packages:
     scoop:
       packages:
         - 7zip
+        - bat
         - beyondcompare
         - broot
         - Cascadia-Code
