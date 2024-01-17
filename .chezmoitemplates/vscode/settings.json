@@ -41,7 +41,9 @@
       "path": "${env:USERPROFILE}/scoop/shims/pwsh.exe"
     },
   },
+  "terminal.integrated.smoothScrolling": true,
   "update.enableWindowsBackgroundUpdates": false,
   "update.mode": "none",
+  "workbench.list.smoothScrolling": true,
   "workbench.startupEditor": "none",
 }
