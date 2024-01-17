@@ -9,7 +9,7 @@ The old version of my dotfiles repo can be found [here](https://github.com/nagro
 On Windows:
 
 ```powershell
-Invoke-RestMethod -Uri https://dotfiles.ploki.fr/raw/main/bootstrap.ps1 | Invoke-Expression
+Invoke-RestMethod -Uri https://install.dotfiles.ploki.fr/raw/main/bootstrap.ps1 | Invoke-Expression
 ```
 
 ## Applying configuration to target environment
