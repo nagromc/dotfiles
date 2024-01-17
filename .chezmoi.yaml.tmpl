@@ -4,7 +4,8 @@
 
 {{ $gitemail := promptStringOnce . "gitemail" "Git e-mail" -}}
 
-{{ $usage := promptStringOnce . "usage" "Usage (work|home)" -}}
+{{- $usageChoices := list "home" "work" -}}
+{{- $usage := promptChoiceOnce . "usage" "Usage" $usageChoices -}}
 
 {{ $keepassxcpath := promptStringOnce . "keepassxcpath" "KeePassXC database path" -}}
 
