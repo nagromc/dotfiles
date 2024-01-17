@@ -109,6 +109,8 @@ packages:
           - install-context.reg
         notepadplusplus:
           - install-context.reg
+        sublime-merge:
+          - install-context.reg
         sublime-text:
           - install-context.reg
         vscode:
