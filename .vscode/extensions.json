@@ -3,5 +3,6 @@
     "editorconfig.editorconfig",
     "golang.go",
     "ms-vscode.powershell",
+    "tamasfe.even-better-toml",
   ]
 }
