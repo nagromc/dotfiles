@@ -9,6 +9,7 @@
     "**/dot_aliases": "shellscript",
     "**/dot_bashrc": "shellscript",
     "**/dot_config/git/config.tmpl": "properties",
+    "**/dot_config/scoop/modify_config.json": "gotmpl",
     "**/dot_editorconfig": "editorconfig",
     "**/dot_profile.tmpl": "shellscript",
     "**/dot_zprofile": "shellscript",

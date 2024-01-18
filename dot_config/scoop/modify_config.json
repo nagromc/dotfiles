@@ -1,0 +1,11 @@
+// chezmoi:modify-template
+{{- $currentConfig := .chezmoi.stdin | fromJson -}}
+{{- $modifiedConfig := .chezmoi.stdin | fromJson -}}
+
+{{- $_ := set $modifiedConfig "aria2-warning-enabled" false -}}
+
+{{- if deepEqual $currentConfig $modifiedConfig -}}
+{{-   .chezmoi.stdin }}
+{{- else -}}
+{{-   $modifiedConfig | toPrettyJson }}
+{{- end -}}

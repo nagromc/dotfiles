@@ -1,6 +1,7 @@
 {
   "recommendations": [
     "editorconfig.editorconfig",
-    "ms-vscode.powershell"
+    "golang.go",
+    "ms-vscode.powershell",
   ]
 }
