@@ -81,7 +81,9 @@ packages:
         - difftastic
         - dockercompletion
         - dua
+        - eartrumpet
         - fd
+        - firefox
         - fzf
         - gh
         - git
@@ -103,6 +105,7 @@ packages:
         - sumatrapdf
         - terminal-icons
         - topgrade
+        - twinkle-tray
         - vscode
         - windows-terminal
         - zoxide
