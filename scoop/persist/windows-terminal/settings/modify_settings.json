@@ -1,0 +1,46 @@
+{{- /* chezmoi:modify-template */ -}}
+
+{{- $pwshPath := (joinPath .chezmoi.homeDir "scoop/apps/pwsh/current/pwsh.exe" | quote) -}}
+{{- $nushellPath := (joinPath .chezmoi.homeDir "scoop/apps/nu/current/nu.exe" | quote) -}}
+{{- $nushellProfile := printf `
+{
+  "profiles": {
+    "list": [
+      {
+        "commandline": "%%SystemRoot%%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+        "hidden": false,
+        "name": "Windows PowerShell"
+      },
+      {
+        "commandline": "%%SystemRoot%%\\System32\\cmd.exe",
+        "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+        "hidden": false,
+        "name": "Command prompt"
+      },
+      {
+        "commandline": %s,
+        "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+        "hidden": false,
+        "name": "PowerShell Core"
+      },
+      {
+        "commandline": %s,
+        "guid": "{c4943d57-921b-4f95-a613-19aa16b1b20e}",
+        "hidden": false,
+        "icon": %s,
+        "name": "Nushell",
+        "startingDirectory": "%%USERPROFILE%%"
+      }
+    ]
+  }
+}
+` $pwshPath $nushellPath $nushellPath | fromJson -}}
+
+{{- fromJson .chezmoi.stdin
+ | setValueAtPath "profiles.defaults.colorScheme" "One Half Dark"
+ | setValueAtPath "profiles.defaults.font.face" "CaskaydiaCove Nerd Font"
+ | setValueAtPath "profiles.defaults.font.size" 9
+ | setValueAtPath "defaultProfile" "{c4943d57-921b-4f95-a613-19aa16b1b20e}"
+ | merge $nushellProfile
+ | toPrettyJson -}}
