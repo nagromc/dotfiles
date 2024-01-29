@@ -41,6 +41,8 @@
  | setValueAtPath "profiles.defaults.colorScheme" "One Half Dark"
  | setValueAtPath "profiles.defaults.font.face" "CaskaydiaCove Nerd Font"
  | setValueAtPath "profiles.defaults.font.size" 9
+ | setValueAtPath "profiles.defaults.opacity" 80
+ | setValueAtPath "profiles.defaults.useAcrylic" true
  | setValueAtPath "defaultProfile" "{c4943d57-921b-4f95-a613-19aa16b1b20e}"
  | merge $nushellProfile
  | toPrettyJson -}}
