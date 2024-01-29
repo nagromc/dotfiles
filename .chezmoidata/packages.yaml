@@ -73,44 +73,70 @@ packages:
         - autohotkey
         - bat
         - beyondcompare
+        - bottom
         - broot
         - Cascadia-Code
         - CascadiaCode-NF
         - chezmoi
         - clink
+        - croc
+        - ctop
         - curl
         - delta
         - difftastic
         - dockercompletion
         - dua
+        - duf
+        - dust
         - eartrumpet
         - eza
         - fd
         - firefox
+        - fselect
+        - fx
         - fzf
         - gh
         - git
+        - gitui
         - glab
+        - grex
         - gsudo
         - hexyl
+        - hyperfine
+        - jq
         - just
         - keepassxc
+        - lazydocker
+        - lazygit
         - lsd
+        - macchina
+        - micro
+        - miniserve
+        - mob
         - neovide
         - neovim
         - notepadplusplus
         - nu
+        - numbat
+        - ouch
+        - pastel
         - posh-docker
         - posh-git
+        - procs
+        - psfzf
         - pwsh
         - ripgrep
+        - sd
         - starship
         - sublime-merge
         - sublime-text
         - sumatrapdf
+        - tealdeer
         - terminal-icons
+        - tokei
         - topgrade
         - twinkle-tray
+        - vim
         - vscode
         - windows-terminal
         - xh
