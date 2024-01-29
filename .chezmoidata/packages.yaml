@@ -26,6 +26,7 @@ packages:
       - ripgrep
       - starship
       - topgrade
+      - xh
       - zoxide
     casks:
       - alt-tab
@@ -108,6 +109,7 @@ packages:
         - twinkle-tray
         - vscode
         - windows-terminal
+        - xh
         - zoxide
       contextMenus:
         beyondcompare:
