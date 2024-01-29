@@ -13,3 +13,6 @@ Import-Module Terminal-Icons
 
 # broot
 . "$env:APPDATA/dystroy/broot/config/launcher/powershell/br.ps1"
+
+# direnv
+Invoke-Expression "$(direnv hook pwsh)"

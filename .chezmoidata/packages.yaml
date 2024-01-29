@@ -81,6 +81,7 @@ packages:
         - curl
         - delta
         - difftastic
+        - direnv
         - dockercompletion
         - dua
         - eartrumpet

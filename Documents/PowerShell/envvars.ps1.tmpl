@@ -6,3 +6,8 @@ $Env:RIPGREP_CONFIG_PATH = "$Env:USERPROFILE\.config\ripgrep\ripgreprc"
 # count shell level
 $Env:SHLVL = [int] $Env:SHLVL + 1
 $Env:VISUAL = "micro"
+
+# workaround until direnv/direnv#1105 is solved
+$Env:DIRENV_CONFIG = "$Env:APPDATA\direnv\conf"
+$Env:XDG_CACHE_HOME = "$Env:APPDATA\direnv\cache"
+$Env:XDG_DATA_HOME = "$Env:APPDATA\direnv\data"
