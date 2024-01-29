@@ -69,6 +69,7 @@ packages:
     scoop:
       packages:
         - 7zip
+        - aria2
         - autohotkey
         - bat
         - beyondcompare
@@ -83,6 +84,7 @@ packages:
         - dockercompletion
         - dua
         - eartrumpet
+        - eza
         - fd
         - firefox
         - fzf
@@ -90,8 +92,10 @@ packages:
         - git
         - glab
         - gsudo
+        - hexyl
         - just
         - keepassxc
+        - lsd
         - neovide
         - neovim
         - notepadplusplus
