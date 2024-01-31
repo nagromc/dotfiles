@@ -37,7 +37,13 @@
 }
 ` $pwshPath $nushellPath $nushellPath | fromJson -}}
 
-{{- fromJson .chezmoi.stdin
+
+{{- $content := .chezmoi.stdin -}}
+{{- if eq .chezmoi.stdin "" -}}
+{{- $content = "{}" -}}
+{{- end -}}
+
+{{- fromJson $content
  | setValueAtPath "profiles.defaults.colorScheme" "One Half Dark"
  | setValueAtPath "profiles.defaults.font.face" "CaskaydiaCove Nerd Font"
  | setValueAtPath "profiles.defaults.font.size" 9
