@@ -69,7 +69,6 @@ packages:
     scoop:
       packages:
         - 7zip
-        - aria2
         - autohotkey
         - bat
         - beyondcompare
