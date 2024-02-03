@@ -19,3 +19,7 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Control Panel\Keyboard]
 ; maximum keyboard key repetition rate
 "KeyboardSpeed"="31"
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Clipboard]
+; enable clipboard history
+"EnableClipboardHistory"=dword:00000001
