@@ -107,6 +107,7 @@ packages:
         - keepassxc
         - lazydocker
         - lazygit
+        - less
         - lsd
         - macchina
         - micro
