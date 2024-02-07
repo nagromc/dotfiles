@@ -44,6 +44,7 @@
   "terminal.integrated.smoothScrolling": true,
   "update.enableWindowsBackgroundUpdates": false,
   "update.mode": "none",
+  "vim.startInInsertMode": true,
   "workbench.list.smoothScrolling": true,
   "workbench.startupEditor": "none",
 }
