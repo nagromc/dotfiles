@@ -6,7 +6,7 @@
   "draw_white_space": ["all_mixed", "selection", "trailing", "isolated"],
   "font_face": "Cascadia Code",
   "font_options": ["ss01"],
-  "font_size": 9,
+  "font_size": {{ if eq .chezmoi.os "darwin" }}12{{ else }}9{{ end }},
   "hardware_acceleration": "opengl",
   "hide_tab_scrolling_buttons": true,
   "highlight_line": true,
