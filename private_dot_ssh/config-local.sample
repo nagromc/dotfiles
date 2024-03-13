@@ -1,0 +1,3 @@
+Host gitlab.corporate.example.com
+  Hostname gitlab.corporate.example.local
+  Port 2222
