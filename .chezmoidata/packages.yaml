@@ -139,6 +139,7 @@ packages:
         - vim
         - vlc
         - vscode
+        - vscodium
         - windows-terminal
         - xh
         - zoxide
@@ -152,6 +153,8 @@ packages:
         sublime-text:
           - install-context.reg
         vscode:
+          - install-context.reg
+        vscodium:
           - install-context.reg
         windows-terminal:
           - install-context.reg
