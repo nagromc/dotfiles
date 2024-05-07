@@ -3,6 +3,8 @@ source ~/.aliases
 # jenv
 export PATH="$HOME/.jenv/bin:$PATH"
 export PATH="$HOME/Library/Python/3.9/bin:$PATH"
+# override macOS's default Ruby installation
+export PATH="/usr/local/opt/ruby/bin:$PATH"
 eval "$(jenv init -)"
 
 eval "$(zoxide init zsh)"
