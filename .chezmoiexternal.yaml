@@ -1,0 +1,4 @@
+AppData/Local/clink/gizmos:
+  type: git-repo
+  url: https://github.com/chrisant996/clink-gizmos
+  refreshPeriod: 168h  # 1 week
