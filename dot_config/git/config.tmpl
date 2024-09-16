@@ -207,6 +207,7 @@
   attributesFile = ~/.config/git/gitattributes_global
   editor = micro
   excludesfile = ~/.config/git/gitignore_global
+  longpaths = true
   {{- if eq .chezmoi.os "windows" }}
   sshCommand = {{ joinPath (env "windir") "/System32/OpenSSH/ssh.exe" | replaceAllRegex "\\\\" "/" }}
   {{- end }}
