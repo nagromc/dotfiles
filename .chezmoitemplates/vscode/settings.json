@@ -46,7 +46,6 @@
   "update.enableWindowsBackgroundUpdates": false,
   "update.mode": "none",
   "vim.startInInsertMode": true,
-  "vim.statusBarColorControl": true,
   "workbench.list.smoothScrolling": true,
   "workbench.startupEditor": "none",
 }
