@@ -8,6 +8,7 @@ packages:
       - fzf
       - gh
       - git
+      - gitleaks
       - glab
       - glances
       - hexyl
@@ -96,6 +97,7 @@ packages:
         - fzf
         - gh
         - git
+        - gitleaks
         - gitui
         - glab
         - grex
