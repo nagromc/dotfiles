@@ -1,0 +1,36 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Open directory in Sublime Text",
+      "type": "shell",
+      "command": "subl --launch-or-new-window ${workspaceFolder}",
+      "presentation": {
+        "reveal": "never"
+      },
+      "problemMatcher": [],
+    },
+    {
+      "label": "Open directory in Fleet",
+      "type": "shell",
+      "command": "fleet ${workspaceFolder}",
+      "presentation": {
+        "reveal": "never"
+      },
+      "problemMatcher": []
+    }
+{{- if eq .chezmoi.os "windows" -}},
+    {
+      "label": "Open directory in Notepad++",
+      "type": "shell",
+      "command": "notepad++.exe -nosession -multiInst -openFoldersAsWorkspace ${workspaceFolder}",
+      "presentation": {
+        "reveal": "never"
+      },
+      "problemMatcher": []
+    }
+{{- end }}
+  ]
+}
