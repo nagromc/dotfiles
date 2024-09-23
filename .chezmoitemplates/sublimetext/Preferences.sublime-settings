@@ -13,6 +13,7 @@
   "ignored_packages":
   [
   ],
+  "index_files": true,
   "rulers":
   [
     100,
