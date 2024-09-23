@@ -25,7 +25,7 @@
   },
   "git.autofetch": true,
   "git.autofetchPeriod": 3600,
-  "git.inputValidation": "warn",
+  "git.inputValidation": true,
   "search.smartCase": true,
   "telemetry.telemetryLevel": "off",
   "terminal.integrated.automationProfile.windows": {
