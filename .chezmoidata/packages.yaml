@@ -28,6 +28,7 @@ packages:
       - starship
       - topgrade
       - xh
+      - yazi
       - zoxide
     casks:
       - alt-tab
@@ -144,6 +145,7 @@ packages:
         - vscodium
         - windows-terminal
         - xh
+        - yazi
         - zoxide
       contextMenus:
         beyondcompare:
