@@ -29,4 +29,5 @@
   {{- end }}
   "theme": "Adaptive.sublime-theme",
   "update_check": false,
+  "vintage_use_clipboard": true,
 }
