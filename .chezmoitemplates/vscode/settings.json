@@ -46,6 +46,7 @@
   "update.enableWindowsBackgroundUpdates": false,
   "update.mode": "none",
   "vim.startInInsertMode": true,
+  "vim.useSystemClipboard": true,
   "workbench.list.smoothScrolling": true,
   "workbench.startupEditor": "none",
 }
