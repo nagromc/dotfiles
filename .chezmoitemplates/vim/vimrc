@@ -1,0 +1,3 @@
+set number relativenumber
+set scrolloff=5
+set sidescrolloff=15
