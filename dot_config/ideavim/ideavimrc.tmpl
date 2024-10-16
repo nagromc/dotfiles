@@ -1,0 +1,8 @@
+{{ if eq .chezmoi.os "windows" -}}
+source ~/vimfiles/vimrc
+{{- else -}}
+source ~/.config/vim/vimrc
+{{- end }}
+
+" use system clipboard when yanking
+set clipboard+=unnamed

@@ -1,2 +1,0 @@
-" use system clipboard when yanking
-set clipboard+=unnamed
