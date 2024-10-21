@@ -1,4 +1,5 @@
 {
+  "auto_fetch_delay": 15,
   "font_size": 9,
   "render_commit_dialog_message_at_top": false,
   "theme": "Merge Dark.sublime-theme",
