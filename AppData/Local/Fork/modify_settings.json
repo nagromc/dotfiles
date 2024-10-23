@@ -1,0 +1,13 @@
+{{- /* chezmoi:modify-template */ -}}
+{{- $currentConfig := .chezmoi.stdin | fromJson -}}
+{{- $modifiedConfig := .chezmoi.stdin | fromJson -}}
+
+{{- $_ := set $modifiedConfig "FetchRemotesAutomatically" true -}}
+{{- $_ := set $modifiedConfig "FetchAllTags" true -}}
+{{- $_ := set $modifiedConfig "ApplicationUpdateType" 2 -}}
+
+{{- if deepEqual $currentConfig $modifiedConfig -}}
+{{-   .chezmoi.stdin }}
+{{- else -}}
+{{-   $modifiedConfig | toPrettyJson }}
+{{- end -}}
