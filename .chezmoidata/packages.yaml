@@ -32,6 +32,7 @@ packages:
       - zoxide
     casks:
       - alt-tab
+      - ariang
       - balenaetcher
       - beyond-compare
       - docker
@@ -71,6 +72,7 @@ packages:
     scoop:
       packages:
         - 7zip
+        - ariang-native
         - autohotkey
         - bat
         - beyondcompare
