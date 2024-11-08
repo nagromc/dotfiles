@@ -31,7 +31,6 @@ packages:
       - yazi
       - zoxide
     casks:
-      - alt-tab
       - ariang
       - balenaetcher
       - beyond-compare
