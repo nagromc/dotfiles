@@ -60,7 +60,6 @@ packages:
       - sublime-text
       - syncthing
       - vagrant
-      - virtualbox
       - visual-studio-code
       - vlc
       - vmware-fusion
