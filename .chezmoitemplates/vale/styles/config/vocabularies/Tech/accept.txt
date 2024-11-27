@@ -1,0 +1,3 @@
+chezmoi
+dotfile[s]?
+repo[s]?
