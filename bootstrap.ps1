@@ -2,7 +2,7 @@ function SetRemoteSignedExecutionPolicy {
   Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 }
 
-function InstallScoop {
+function InstallTmpChezmoi {
   '$params = "-BinDir $Env:TEMP"', (Invoke-RestMethod -Uri https://get.chezmoi.io/ps1) | Invoke-Expression
 }
 
@@ -15,6 +15,6 @@ function BootstrapChezmoi {
 }
 
 SetRemoteSignedExecutionPolicy
-InstallScoop
+InstallTmpChezmoi
 AddScoopToPath
 BootstrapChezmoi
