@@ -2,3 +2,7 @@ AppData/Local/clink/gizmos:
   type: git-repo
   url: https://github.com/chrisant996/clink-gizmos
   refreshPeriod: 168h  # 1 week
+AppData/Local/tealdeer/tealdeer/pages:
+  type: git-repo
+  url: https://github.com/nagromc/tldr-custom-pages
+  refreshPeriod: 168h  # 1 week
