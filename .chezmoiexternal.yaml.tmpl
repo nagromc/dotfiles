@@ -1,3 +1,4 @@
+{{ if eq .chezmoi.os "windows" }}
 AppData/Local/clink/gizmos:
   type: git-repo
   url: https://github.com/chrisant996/clink-gizmos
@@ -6,3 +7,4 @@ AppData/Local/tealdeer/tealdeer/pages:
   type: git-repo
   url: https://github.com/nagromc/tldr-custom-pages
   refreshPeriod: 168h  # 1 week
+{{ end }}
