@@ -4,7 +4,7 @@
       "name": "chezmoi apply",
       "type": "command",
       "program": "chezmoi",
-      "args": ["apply"]
+      "args": ["apply", "--refresh-externals=always"]
     }
   ]
 }

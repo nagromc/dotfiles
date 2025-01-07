@@ -9,7 +9,7 @@
   [
     {
       "name": "chezmoi apply",
-      "shell_cmd": "chezmoi apply"
+      "shell_cmd": "chezmoi apply --refresh-externals=always"
     },
   ]
 }
