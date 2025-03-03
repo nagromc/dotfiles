@@ -4,5 +4,4 @@
 . "$PSScriptRoot/completions.ps1"
 . "$PSScriptRoot/envvars.ps1"
 . "$PSScriptRoot/functions.ps1"
-. "$PSScriptRoot/pwsh-options.ps1"
 . "$PSScriptRoot/tools-integration.ps1"

@@ -9,3 +9,7 @@ eval "$(jenv init -)"
 
 eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
+
+# carapace shell completer
+zstyle ':completion:*' format $'\e[2;37mCompleting %d\e[m'
+source <(carapace _carapace)

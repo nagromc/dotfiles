@@ -2,6 +2,7 @@ packages:
   darwin:
     brews:
       - bat
+      - carapace
       - chezmoi
       - difftastic
       - exa
@@ -76,6 +77,7 @@ packages:
         - beyondcompare
         - bottom
         - broot
+        - carapace-bin
         - Cascadia-Code
         - CascadiaCode-NF
         - chezmoi

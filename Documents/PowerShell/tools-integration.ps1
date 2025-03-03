@@ -1,6 +1,3 @@
-# display possible completion with fzf instead of completing
-Set-PSReadLineKeyHandler -Key Tab -ScriptBlock { Invoke-FzfTabCompletion }
-
 # starship
 Invoke-Expression (&starship init powershell)
 

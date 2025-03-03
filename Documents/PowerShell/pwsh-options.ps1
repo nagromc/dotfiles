@@ -1,1 +1,0 @@
-Set-PSReadlineOption -EditMode vi
