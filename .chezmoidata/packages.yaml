@@ -64,6 +64,7 @@ packages:
       - visual-studio-code
       - vlc
       - vmware-fusion
+      - vscodium
       - warp
       - yubico-yubikey-manager
       - yubico-yubikey-personalization-gui
