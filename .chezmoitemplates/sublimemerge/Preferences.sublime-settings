@@ -1,5 +1,5 @@
 {
-  "auto_fetch_delay": 15,
+  {{ if eq .usage "work" }}"auto_fetch_delay": 15,{{ end }}
   "font_size": {{ if eq .chezmoi.os "darwin" }}12{{ else }}9{{ end }},
   "render_commit_dialog_message_at_top": false,
   "theme": "Merge Dark.sublime-theme",
