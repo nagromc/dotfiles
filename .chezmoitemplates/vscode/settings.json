@@ -23,7 +23,7 @@
     "**/.settings": true,
     "**/.factorypath": true
   },
-  "git.autofetch": true,
+  {{- if eq .usage "work" -}}"git.autofetch": true,{{- end}}
   "git.autofetchPeriod": 3600,
   "git.inputValidation": true,
   "search.smartCase": true,
