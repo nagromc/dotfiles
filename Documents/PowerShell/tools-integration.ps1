@@ -10,3 +10,6 @@ Import-Module Terminal-Icons
 
 # broot
 . "$env:APPDATA/dystroy/broot/config/launcher/powershell/br.ps1"
+
+# mise-en-place
+(&mise activate pwsh) | Out-String | Invoke-Expression

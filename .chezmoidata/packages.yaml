@@ -17,6 +17,7 @@ packages:
       - lsd
       - maven
       - micro
+      - mise
       - moar
       - neovim
       - node
@@ -118,6 +119,7 @@ packages:
         - macchina
         - micro
         - miniserve
+        - mise
         - mob
         - neovide
         - neovim
