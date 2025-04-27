@@ -1,3 +1,10 @@
+{{ if eq .chezmoi.os "darwin" }}
+Library/Application Support/kanata:
+  type: git-repo
+  url: https://github.com/nagromc/kanata-config
+  refreshPeriod: 24h  # 1 day
+{{ end }}
+
 {{ if eq .chezmoi.os "windows" }}
 AppData/Local/clink/gizmos:
   type: git-repo
