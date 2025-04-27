@@ -1,3 +1,4 @@
+{{ if eq .chezmoi.os "windows" }}
 AppData/Local/clink/gizmos:
   type: git-repo
   url: https://github.com/chrisant996/clink-gizmos
@@ -9,3 +10,4 @@ AppData/Local/tealdeer/tealdeer/pages:
 AppData/Roaming/kanata:
   type: git-repo
   url: https://github.com/nagromc/kanata-config
+{{ end }}
