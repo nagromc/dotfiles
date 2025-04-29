@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/espanso/espanso/dev/schemas/match.schema.json
+
+matches:
+  # Print the current date in various formats
+  - trigger: ":date"
+    replace: "{{"{{date_output}}"}}"
+    label: Today
+    vars:
+      - name: format
+        type: choice
+        params:
+          values:
+            - label: Date (2015-10-21)
+              id: "%F"
+            - label: Datetime (2015-10-21T16:29:42)
+              id: "%Y-%m-%dT%H:%M:%S"
+            - label: Datetime with fraction of a second (2015-10-21T16:29:42.1337)
+              id: "%Y-%m-%dT%H:%M:%S.%f"
+            - label: Datetime with fraction of a second and TZ (2015-10-21T16:29:42.1337+01:00)
+              id: "%+"
+      - name: date_output
+        type: date
+        params:
+          format: "{{"{{format}}"}}"
+
+  # Fixed date for unit tests or code examples
+  - trigger: ":date"
+    replace: 2015-10-21T16:29:42.1337
+    label: Fixed date `2015-10-21T16:29:42.1337`

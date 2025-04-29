@@ -1,0 +1,7 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/espanso/espanso/dev/schemas/match.schema.json
+
+# My stupid brain will always try to misspell these words for some reason
+
+matches:
+  - {trigger: moitier, replace: moitié, left_word: true}
+  - {trigger: vraiement, replace: vraiment, word: true}

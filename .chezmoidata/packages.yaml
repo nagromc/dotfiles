@@ -37,6 +37,7 @@ packages:
       - balenaetcher
       - beyond-compare
       - docker
+      - espanso
       - firefox
       - font-cascadia-code
       - font-cascadia-code-pl
@@ -94,6 +95,7 @@ packages:
         - duf
         - dust
         - eartrumpet
+        - espanso
         - eza
         - fd
         - firefox
