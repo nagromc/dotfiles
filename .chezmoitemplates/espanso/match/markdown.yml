@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/espanso/espanso/dev/schemas/match.schema.json
+
+matches:
+  - regex: ":(mdcode|mdblock|mdcb):?(?P<lang>.*)\\s"
+    replace: |-
+      {{ "```{{lang}}" }}
+      $|$
+      ```
+
+  - triggers: [":mdlink", ":mdlnk"]
+    replace: "{{ "[{{fm.text}}]({{fm.link}})" }}"
+    vars:
+      - name: clipb
+        type: clipboard
+      - name: fm
+        type: form
+        params:
+          layout: "Text [[text]]\nLink [[link]]"
+          fields:
+            link:
+              default: "{{ "{{clipb}}" }}"
+
+  - triggers: [":mdtable", ":mdtbl"]
+    replace: |
+      {{ "| {{fm.hdr1}} | {{fm.hdr2}} |" }}
+      | --- | --- |
+      | $|$ |     |
+    vars:
+    - name: fm
+      type: form
+      params:
+        layout: |
+          Column1 header: [[hdr1]]
+          Column2 header: [[hdr2]]
