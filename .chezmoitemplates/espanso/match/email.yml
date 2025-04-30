@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/espanso/espanso/dev/schemas/match.schema.json
+
+global_vars:
+  - name: my_name
+    type: echo
+    params:
+      echo: Morgan Courbet
+
+
+matches:
+  - regex: "[cC]dl?t,"
+    replace: |-
+      Cordialement,
+      {{ "{{my_name}}" }}
+
+  - regex: "[bB]onjour(?P<name>.*),"
+    replace: |-
+      {{ "Bonjour{{name}}," }}
+
+      $|$
+
+      Cordialement,
+      {{ "{{my_name}}" }}
+
+  # reformat French phone number (0123456789 -> 01 23 45 67 89)
+  - regex: "0(?P<gp1>\\d)(?P<gp2>\\d{2})(?P<gp3>\\d{2})(?P<gp4>\\d{2})(?P<gp5>\\d{2})"
+    replace: "{{ "0{{gp1}} {{gp2}} {{gp3}} {{gp4}} {{gp5}}" }}"
+
+  # reformat French phone number in international format (+33123456789 -> +33 1 23 45 67 89)
+  - regex: "\\+33(?P<gp1>\\d)(?P<gp2>\\d{2})(?P<gp3>\\d{2})(?P<gp4>\\d{2})(?P<gp5>\\d{2})"
+    replace: "{{ "+33 {{gp1}} {{gp2}} {{gp3}} {{gp4}} {{gp5}}" }}"
+    
