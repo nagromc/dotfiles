@@ -2,12 +2,14 @@
 
 matches:
   - regex: ":(mdcode|mdblock|mdcb):?(?P<lang>.*)\\s"
+    label: "Markdown: block of code"
     replace: |-
       {{ "```{{lang}}" }}
       $|$
       ```
 
   - triggers: [":mdlink", ":mdlnk"]
+    label: "Markdown: link"
     replace: "{{ "[{{fm.text}}]({{fm.link}})" }}"
     vars:
       - name: clipb
@@ -21,6 +23,7 @@ matches:
               default: "{{ "{{clipb}}" }}"
 
   - triggers: [":mdtable", ":mdtbl"]
+    label: "Markdown: table"
     replace: |
       {{ "| {{fm.hdr1}} | {{fm.hdr2}} |" }}
       | --- | --- |

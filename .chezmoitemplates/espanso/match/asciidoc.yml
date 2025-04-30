@@ -2,6 +2,7 @@
 
 matches:
   - triggers: [":adoclink", ":adoclnk"]
+    label: "AsciiDoc: link"
     replace: "{{ "{{fm.link}}[{{fm.text}}]" }}"
     vars:
       - name: clipb
@@ -15,6 +16,7 @@ matches:
               default: "{{ "{{clipb}}" }}"
 
   - regex: ":(adoccode|adocblock|adoccb):?(?P<lang>.*)\\s"
+    label: "AsciiDoc: block of code"
     replace: |-
       {{ "[source,{{lang}}]" }}
       ----
@@ -22,6 +24,7 @@ matches:
       ----
 
   - trigger: ":adocadm"
+    label: "AsciiDoc: admonition"
     replace: |-
       {{ "[{{fm.admtypes}}]" }}
       ====
@@ -43,6 +46,7 @@ matches:
                 - WARNING
 
   - triggers: [":adoctable", ":adoctbl"]
+    label: "AsciiDoc: table"
     replace: |-
       .Table Title
       |===
@@ -57,10 +61,13 @@ matches:
       |===
 
   - trigger: ":adockbd"
+    label: "AsciiDoc: keyboard"
     replace: kbd:[$|$]
 
   - trigger: ":adocbtn"
+    label: "AsciiDoc: button"
     replace: btn:[$|$]
 
   - trigger: ":adoclit"
+    label: "AsciiDoc: inline code"
     replace: "`+$|$+`"

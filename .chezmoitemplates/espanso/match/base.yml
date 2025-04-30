@@ -1,10 +1,9 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/espanso/espanso/dev/schemas/match.schema.json
 
 matches:
-  # Print the current date in various formats
   - trigger: ":date"
+    label: "Date: current date time in various formats"
     replace: "{{"{{date_output}}"}}"
-    label: Today
     vars:
       - name: format
         type: choice
@@ -23,13 +22,12 @@ matches:
         params:
           format: "{{"{{format}}"}}"
 
-  # Fixed date for unit tests or code examples
   - trigger: ":date"
+    label: "Date: fixed date `2015-10-21T16:29:42.1337` (for unit tests or code examples)"
     replace: 2015-10-21T16:29:42.1337
-    label: Fixed date `2015-10-21T16:29:42.1337`
 
-  # Public IP address
   - triggers: [":ip", ":myip", ":wimi"]
+    label: Public IP address
     replace: "{{ "{{ipaddr}}" }}"
     vars:
       - name: ipaddr
