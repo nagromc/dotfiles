@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/espanso/espanso/dev/schemas/match.schema.json
+
+matches:
+  - triggers: [":adoclink", ":adoclnk"]
+    replace: "{{ "{{fm.link}}[{{fm.text}}]" }}"
+    vars:
+      - name: clipb
+        type: clipboard
+      - name: fm
+        type: form
+        params:
+          layout: "Text [[text]]\nLink [[link]]"
+          fields:
+            link:
+              default: "{{ "{{clipb}}" }}"
+
+  - regex: ":(adoccode|adocblock|adoccb):?(?P<lang>.*)\\s"
+    replace: |-
+      {{ "[source,{{lang}}]" }}
+      ----
+      $|$
+      ----
+
+  - trigger: ":adocadm"
+    replace: |-
+      {{ "[{{fm.admtypes}}]" }}
+      ====
+      $|$
+      ====
+    vars:
+      - name: fm
+        type: form
+        params:
+          layout: "[[admtypes]]"
+          fields:
+            admtypes:
+              type: choice
+              values:
+                - NOTE
+                - IMPORTANT
+                - TIP
+                - CAUTION
+                - WARNING
+
+  - triggers: [":adoctable", ":adoctbl"]
+    replace: |-
+      .Table Title
+      |===
+      |Column 1, Header Row
+      |Column 2, Header Row
+
+      |Cell in column 1, row 1
+      |Cell in column 2, row 1
+
+      |Cell in column 1, row 2
+      |Cell in column 2, row 2
+      |===
+
+  - trigger: ":adockbd"
+    replace: kbd:[$|$]
+
+  - trigger: ":adocbtn"
+    replace: btn:[$|$]
+
+  - trigger: ":adoclit"
+    replace: "`+$|$+`"
