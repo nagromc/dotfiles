@@ -27,3 +27,12 @@ matches:
   - trigger: ":date"
     replace: 2015-10-21T16:29:42.1337
     label: Fixed date `2015-10-21T16:29:42.1337`
+
+  # Public IP address
+  - triggers: [":ip", ":myip", ":wimi"]
+    replace: "{{ "{{ipaddr}}" }}"
+    vars:
+      - name: ipaddr
+        type: shell
+        params:
+          cmd: "curl 'https://api.ipify.org'"
