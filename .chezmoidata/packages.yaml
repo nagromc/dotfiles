@@ -113,6 +113,7 @@ packages:
         - hyperfine
         - jq
         - just
+        - kanata
         - keepassxc
         - lazydocker
         - lazygit
