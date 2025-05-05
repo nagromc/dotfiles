@@ -6,6 +6,10 @@ Library/Application Support/kanata:
 {{ end }}
 
 {{ if eq .chezmoi.os "windows" }}
+.config/komorebi/applications.json:
+  type: file
+  url: https://raw.githubusercontent.com/LGUG2Z/komorebi-application-specific-configuration/refs/heads/master/applications.json
+  refreshPeriod: 168h  # 1 week
 AppData/Local/clink/gizmos:
   type: git-repo
   url: https://github.com/chrisant996/clink-gizmos
