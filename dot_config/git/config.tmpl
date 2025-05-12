@@ -231,6 +231,16 @@
   clean = unexpand --tabs=2 --first-only
 [format]
   pretty = %C(red)%h%C(reset) -%C(auto)%d%C(reset) %s %C(green)(%ad)%C(reset) %C(blue)[%aN]%C(reset)
+[gitflow "branch"]
+  develop = develop
+  master = main
+[gitflow "prefix"]
+  feature = feature/
+  release = release/
+  hotfix = hotfix/
+  versiontag =
+  bugfix = bugfix/
+  support = support/
 [init]
   defaultBranch = develop
 [log]
