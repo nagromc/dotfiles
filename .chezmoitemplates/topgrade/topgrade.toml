@@ -1,6 +1,8 @@
 [misc]
 {{ "# documentation can be found here: https://github.com/topgrade-rs/topgrade/blob/master/config.example.toml" }}
 
+cleanup = true
+
 disable = ["gem", "tlmgr", "vagrant"]
 
 no_retry = true
