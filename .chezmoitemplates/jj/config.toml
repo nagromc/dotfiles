@@ -1,5 +1,15 @@
 "$schema" = "https://jj-vcs.github.io/jj/latest/config-schema.json"
 
+[aliases]
+d = ["describe"]
+dm = ["describe", "-m"]
+df = ["diff"]
+ed = ["edit"]
+rb = ["rb"]
+sh = ["show"]
+sp = ["split"]
+u = ["undo"]
+
 [ui]
 default-command = "log"
 
