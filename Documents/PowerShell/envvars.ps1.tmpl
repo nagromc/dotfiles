@@ -1,8 +1,7 @@
 $Env:COLORTERM = 'truecolor'
-$Env:EDITOR = "vim"
 $Env:LESS = {{ .envvars.less | quote }}
 $Env:PAGER = {{ .envvars.pager | quote }}
 $Env:RIPGREP_CONFIG_PATH = "$Env:USERPROFILE\.config\ripgrep\ripgreprc"
 # count shell level
 $Env:SHLVL = [int] $Env:SHLVL + 1
-$Env:VISUAL = "micro"
+$Env:VISUAL = "vim"
