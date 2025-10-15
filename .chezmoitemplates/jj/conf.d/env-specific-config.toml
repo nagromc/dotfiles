@@ -1,0 +1,5 @@
+# Copy this file and rename this template to `work.toml` or `personal.toml` for instance
+--when.repositories = ["~/the/env/specific/path"]
+
+[user]
+email = "my-env-specific-email@example.org"
