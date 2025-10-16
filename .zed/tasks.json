@@ -1,6 +1,12 @@
 [
   {
     "label": "chezmoi: apply configuration",
+    "command": "chezmoi apply",
+    "reveal": "no_focus",
+    "hide": "on_success"
+  },
+  {
+    "label": "chezmoi: apply configuration (force update externals)",
     "command": "chezmoi apply --refresh-externals=always",
     "reveal": "no_focus",
     "hide": "on_success"

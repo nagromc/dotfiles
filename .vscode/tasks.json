@@ -6,12 +6,23 @@
     {
       "label": "chezmoi: apply configuration",
       "type": "shell",
-      "command": "chezmoi apply --refresh-externals=always",
+      "command": "chezmoi apply",
       "group": {
         "kind": "build",
         "isDefault": true
       },
       "presentation":{
+        "focus": true,
+      }
+    },
+    {
+      "label": "chezmoi: apply configuration (force update externals)",
+      "type": "shell",
+      "command": "chezmoi apply --refresh-externals=always",
+      "group": {
+        "kind": "build"
+      },
+      "presentation": {
         "focus": true,
       }
     }
