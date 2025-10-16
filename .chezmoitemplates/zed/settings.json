@@ -20,5 +20,8 @@
     "light": "One Light",
     "dark": "One Dark"
   },
+  "title_bar": {
+    "show_sign_in": false
+  },
   "ui_font_size": 16
 }
