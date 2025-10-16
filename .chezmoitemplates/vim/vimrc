@@ -1,3 +1,7 @@
+" Load the default Vim config. See https://vimhelp.org/starting.txt.html#defaults.vim
+unlet! skip_defaults_vim
+source $VIMRUNTIME/defaults.vim
+
 set number relativenumber
 set scrolloff=5
 set sidescrolloff=15
