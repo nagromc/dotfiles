@@ -1,0 +1,8 @@
+[
+  {
+    "label": "chezmoi: apply configuration",
+    "command": "chezmoi apply --refresh-externals=always",
+    "reveal": "no_focus",
+    "hide": "on_success"
+  }
+]
