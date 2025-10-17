@@ -2,5 +2,6 @@
 unlet! skip_defaults_vim
 source $VIMRUNTIME/defaults.vim
 
-set number relativenumber
+set number
+set relativenumber
 set sidescrolloff=15
