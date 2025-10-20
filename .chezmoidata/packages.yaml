@@ -10,6 +10,7 @@ packages:
       - gh
       - git
       - gitleaks
+      - git-flow-next
       - glab
       - glances
       - hexyl
@@ -124,6 +125,7 @@ packages:
         - miniserve
         - mise
         - mob
+        - morgan/git-flow-next
         - neovide
         - neovim
         - notepadplusplus
