@@ -1,8 +1,8 @@
 "$schema" = "https://jj-vcs.github.io/jj/latest/config-schema.json"
 
 [aliases]
-d = ["describe"]
-dm = ["describe", "-m"]
+dc = ["describe"]
+dcm = ["describe", "-m"]
 df = ["diff"]
 ed = ["edit"]
 lg = ["log"]
