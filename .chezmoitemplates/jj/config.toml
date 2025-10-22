@@ -1,6 +1,9 @@
 "$schema" = "https://jj-vcs.github.io/jj/latest/config-schema.json"
 
 [aliases]
+bk = ["bookmark"]
+bkm = ["bookmark", "move", "--to"]
+bkmp = ["bookmark", "move", "--to", "@-"]
 dc = ["describe"]
 dcm = ["describe", "-m"]
 df = ["diff"]
