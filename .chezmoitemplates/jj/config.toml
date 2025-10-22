@@ -10,7 +10,7 @@ lga = ["log", "--revisions", "::"]
 rb = ["rb"]
 sh = ["show"]
 sp = ["split"]
-u = ["undo"]
+ud = ["undo"]
 
 [ui]
 default-command = "log"
