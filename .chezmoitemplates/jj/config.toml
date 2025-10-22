@@ -16,3 +16,8 @@ default-command = "log"
 [user]
 name = "Morgan Courbet"
 email = {{ .gitemail | quote }}
+
+[working-copy]
+{{ if eq .chezmoi.os "windows" -}}
+eol-conversion = "input-output"
+{{- end }}
