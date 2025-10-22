@@ -12,6 +12,7 @@ u = ["undo"]
 
 [ui]
 default-command = "log"
+merge-editor = "smerge"
 
 [user]
 name = "Morgan Courbet"
