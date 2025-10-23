@@ -2,8 +2,9 @@
 
 [aliases]
 bk = ["bookmark"]
-bkm = ["bookmark", "move", "--to"]
-bkmp = ["bookmark", "move", "--to", "@-"]
+bkm = ["bookmark", "move"]
+bkmt = ["bookmark", "move", "--to"]
+bkmtp = ["bookmark", "move", "--to", "@-"]
 dc = ["describe"]
 dcm = ["describe", "-m"]
 df = ["diff"]
