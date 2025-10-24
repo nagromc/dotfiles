@@ -20,6 +20,7 @@
   "files.exclude": {
     "**/.classpath": true,
     "**/.factorypath": true,
+    "**/.jj": true,
     "**/.project": true,
     "**/.settings": true,
   },
