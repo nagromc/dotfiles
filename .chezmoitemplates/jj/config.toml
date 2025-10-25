@@ -19,6 +19,12 @@ sh = ["show"]
 sp = ["split"]
 ud = ["undo"]
 
+[colors]
+"timestamp ago" = { "fg" = "ansi-color-30", italic = true }
+
+[template-aliases]
+'format_timestamp(ts)' = 'ts.ago() ++ " " ++ ts.local().format("%c")'
+
 [ui]
 default-command = "log"
 merge-editor = "smerge"
