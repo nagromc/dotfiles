@@ -1,0 +1,39 @@
+[
+  {
+    "label": "Open directory in Fleet",
+    "command": "fleet $ZED_WORKTREE_ROOT",
+    "reveal": "never",
+  },
+  {
+    "label": "Open directory in Fork",
+    "command": "fork open --git-dir=$ZED_WORKTREE_ROOT",
+    "reveal": "never",
+  },
+{{- if eq .chezmoi.os "windows" -}}
+  {
+    "label": "Open directory in Notepad++",
+    "command": "notepad++.exe -nosession -multiInst -openFoldersAsWorkspace $ZED_WORKTREE_ROOT",
+    "reveal": "never",
+  },
+{{- end }}
+  {
+    "label": "Open directory in Sublime Merge",
+    "command": "smerge --launch-or-new-window $ZED_WORKTREE_ROOT",
+    "reveal": "never",
+  },
+  {
+    "label": "Open directory in Sublime Text",
+    "command": "subl --launch-or-new-window $ZED_WORKTREE_ROOT",
+    "reveal": "never",
+  },
+  {
+    "label": "Open directory in VSCodium",
+    "command": "codium $ZED_WORKTREE_ROOT",
+    "reveal": "never",
+  },
+  {
+    "label": "Open directory in VS Code",
+    "command": "code $ZED_WORKTREE_ROOT",
+    "reveal": "never",
+  },
+]
