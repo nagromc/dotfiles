@@ -38,8 +38,8 @@
         "reveal": "never"
       },
       "problemMatcher": []
-    }
-{{- if eq .chezmoi.os "windows" -}},
+    },
+{{- if eq .chezmoi.os "windows" -}}
     {
       "label": "Open directory in Notepad++",
       "type": "shell",
