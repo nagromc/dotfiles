@@ -37,7 +37,7 @@ packages:
       - ariang
       - balenaetcher
       - beyond-compare
-      - docker
+      - docker-desktop
       - espanso
       - firefox
       - font-cascadia-code
@@ -55,14 +55,14 @@ packages:
       - plex
       - pock
       - proton-drive
-      - protonmail-bridge
+      - proton-mail-bridge
       - protonvpn
       - qbittorrent
       - spotify
       - stats
       - sublime-merge
       - sublime-text
-      - syncthing
+      - syncthing-app
       - vagrant
       - visual-studio-code
       - vlc
