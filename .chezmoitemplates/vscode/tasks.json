@@ -4,6 +4,15 @@
   "version": "2.0.0",
   "tasks": [
     {
+      "label": "Open directory in Fleet",
+      "type": "shell",
+      "command": "fleet ${workspaceFolder}",
+      "presentation": {
+        "reveal": "never"
+      },
+      "problemMatcher": []
+    },
+    {
       "label": "Open directory in Fork",
       "type": "shell",
       "command": "fork open --git-dir=${workspaceFolder}",
@@ -12,6 +21,17 @@
       },
       "problemMatcher": [],
     },
+{{- if eq .chezmoi.os "windows" -}}
+    {
+      "label": "Open directory in Notepad++",
+      "type": "shell",
+      "command": "notepad++.exe -nosession -multiInst -openFoldersAsWorkspace ${workspaceFolder}",
+      "presentation": {
+        "reveal": "never"
+      },
+      "problemMatcher": []
+    },
+{{- end }}
     {
       "label": "Open directory in Sublime Merge",
       "type": "shell",
@@ -30,25 +50,5 @@
       },
       "problemMatcher": [],
     },
-    {
-      "label": "Open directory in Fleet",
-      "type": "shell",
-      "command": "fleet ${workspaceFolder}",
-      "presentation": {
-        "reveal": "never"
-      },
-      "problemMatcher": []
-    },
-{{- if eq .chezmoi.os "windows" -}}
-    {
-      "label": "Open directory in Notepad++",
-      "type": "shell",
-      "command": "notepad++.exe -nosession -multiInst -openFoldersAsWorkspace ${workspaceFolder}",
-      "presentation": {
-        "reveal": "never"
-      },
-      "problemMatcher": []
-    }
-{{- end }}
   ]
 }
