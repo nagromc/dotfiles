@@ -10,7 +10,7 @@ packages:
       - gh
       - git
       - gitleaks
-      - git-flow-next
+      - gittower/tap/git-flow-next
       - glab
       - glances
       - hexyl
@@ -71,6 +71,8 @@ packages:
       - warp
       - yubico-yubikey-manager
       - yubico-yubikey-personalization-gui
+    taps:
+      - gittower/tap
   windows:
     scoop:
       packages:
