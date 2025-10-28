@@ -4,6 +4,15 @@
   "version": "2.0.0",
   "tasks": [
     {
+      "label": "Open directory in Fork",
+      "type": "shell",
+      "command": "fork open --git-dir=${workspaceFolder}",
+      "presentation": {
+        "reveal": "never"
+      },
+      "problemMatcher": [],
+    },
+    {
       "label": "Open directory in Sublime Merge",
       "type": "shell",
       "command": "smerge --launch-or-new-window ${workspaceFolder}",
