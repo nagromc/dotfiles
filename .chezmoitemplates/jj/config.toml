@@ -20,6 +20,7 @@ lgav = ["log", "--revisions", "::", "--template", "builtin_log_detailed"]
 lgv = ["log", "--template", "builtin_log_detailed"]
 rb = ["rb"]
 sh = ["show"]
+shp = ["show", "@-"]
 sp = ["split"]
 ud = ["undo"]
 
