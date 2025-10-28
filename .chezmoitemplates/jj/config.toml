@@ -29,6 +29,7 @@ ud = ["undo"]
 
 [ui]
 default-command = "log"
+diff-formatter = "difft"
 merge-editor = "mergiraf"
 
 [user]
