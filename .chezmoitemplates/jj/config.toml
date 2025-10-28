@@ -29,7 +29,7 @@ ud = ["undo"]
 
 [ui]
 default-command = "log"
-merge-editor = "smerge"
+merge-editor = "mergiraf"
 
 [user]
 name = "Morgan Courbet"

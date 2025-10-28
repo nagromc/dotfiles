@@ -17,6 +17,7 @@ packages:
       - less
       - lsd
       - maven
+      - mergiraf
       - micro
       - mise
       - moar
@@ -123,6 +124,7 @@ packages:
         - less
         - lsd
         - macchina
+        - mergiraf
         - micro
         - miniserve
         - mise
