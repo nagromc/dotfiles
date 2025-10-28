@@ -50,5 +50,14 @@
       },
       "problemMatcher": [],
     },
+    {
+      "label": "Open directory in Zed",
+      "type": "shell",
+      "command": "zed --new ${workspaceFolder}",
+      "presentation": {
+        "reveal": "never"
+      },
+      "problemMatcher": [],
+    },
   ]
 }
