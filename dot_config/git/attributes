@@ -1,3 +1,4 @@
+* merge=mergiraf
 * text=auto
 *.bat text eol=crlf
 *.cmd text eol=crlf
