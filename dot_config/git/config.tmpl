@@ -205,6 +205,7 @@
   cleanup = scissors
 [core]
   longpaths = true
+  pager = delta
   {{- if eq .chezmoi.os "windows" }}
   sshCommand = {{ joinPath (env "windir") "/System32/OpenSSH/ssh.exe" | replaceAllRegex "\\\\" "/" }}
   {{- end }}
@@ -240,6 +241,8 @@
   support = support/
 [init]
   defaultBranch = develop
+[interactive]
+  diffFilter = delta --color-only
 [log]
   date = relative
 [merge]
@@ -248,11 +251,6 @@
 [status]
   branch = true
   short = true
-[pager]
-  diff = delta
-  log = delta
-  reflog = delta
-  show = delta
 [pull]
   rebase = merges
 [push]
