@@ -9,7 +9,7 @@
 {
   "auto_update": true,
   "autosave": "on_focus_change",
-  "buffer_font_family": "Cascadia Code NF",
+  "buffer_font_family": "CaskaydiaCove Nerd Font",
   "buffer_font_features": {
     "calt": true,
     "ss01": true
