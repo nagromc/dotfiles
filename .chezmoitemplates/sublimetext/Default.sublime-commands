@@ -1,0 +1,34 @@
+[
+    {
+        "caption": "Open directory in Fork",
+        "command": "open_directory_in",
+        "args": { "app": "fork" }
+    },
+{{- if eq .chezmoi.os "windows" -}}
+    {
+        "caption": "Open directory in Notepad++",
+        "command": "open_directory_in",
+        "args": { "app": "notepad++" }
+    },
+{{- end }}
+    {
+        "caption": "Open directory in Sublime Merge",
+        "command": "open_directory_in",
+        "args": { "app": "sublime_merge" }
+    },
+    {
+        "caption": "Open directory in VS Code",
+        "command": "open_directory_in",
+        "args": { "app": "vscode" }
+    },
+    {
+        "caption": "Open directory in VSCodium",
+        "command": "open_directory_in",
+        "args": { "app": "vscodium" }
+    },
+    {
+        "caption": "Open directory in Zed",
+        "command": "open_directory_in",
+        "args": { "app": "zed" }
+    },
+]
