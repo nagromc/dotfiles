@@ -10,8 +10,5 @@ trim_trailing_whitespace = true
 [*.md]
 indent_size = 4
 
-[*.py]
-indent_size = 4
-
 [*.sh]
 end_of_line = lf
