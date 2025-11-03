@@ -129,7 +129,7 @@ packages:
         - miniserve
         - mise
         - mob
-        - morgan/git-flow-next
+        - versions/git-flow-next-pre
         - neovide
         - neovim
         - notepadplusplus
