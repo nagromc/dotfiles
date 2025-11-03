@@ -15,6 +15,11 @@
     "ss01": true
   },
   "buffer_font_size": 12,
+  "git": {
+    "inline_blame": {
+      "enabled": false
+    }
+  },
   "theme": {
     "mode": "system",
     "light": "One Light",
