@@ -36,3 +36,12 @@ keepassxc:
     - "2"
   {{- end }}
   database: {{ $keepassxcpath }}
+
+update:
+  command: git
+  args:
+    - pull
+    - --autostash
+    - --rebase
+    - origin
+    - main
