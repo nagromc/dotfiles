@@ -14,7 +14,7 @@
 {{ $wakatimeapikey := keepassxcAttribute "WakaTime" "API key" -}}
 {{ end }}
 
-{{ if eq .chezmoi.os "windows" -}}
+{{- if eq .chezmoi.os "windows" }}
 # override default cmd.exe on windows
 cd:
   command: pwsh
@@ -30,9 +30,9 @@ diff:
   pager: delta
 
 keepassxc:
-  {{ if eq $usage "home" }}
+  {{ if eq $usage "home" -}}
   args:
     - --yubikey
     - "2"
-  {{ end }}
+  {{- end }}
   database: {{ $keepassxcpath }}
