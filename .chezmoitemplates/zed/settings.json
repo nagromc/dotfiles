@@ -28,5 +28,6 @@
   "title_bar": {
     "show_sign_in": false
   },
-  "ui_font_size": 16
+  "ui_font_size": 16,
+  "use_smartcase_search": true
 }
