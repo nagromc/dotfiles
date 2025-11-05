@@ -6,7 +6,7 @@
   },
   {
     "label": "Open directory in Fork",
-    "command": "fork open --git-dir=$ZED_WORKTREE_ROOT",
+    "command": "fork {{ if eq .chezmoi.os "darwin" }}open --git-dir={{ end }}$ZED_WORKTREE_ROOT",
     "hide": "on_success"
   },
 {{- if eq .chezmoi.os "windows" -}}
