@@ -28,6 +28,9 @@ ud = ["undo"]
 [colors]
 "timestamp ago" = { "fg" = "ansi-color-30", italic = true }
 
+[git]
+private-commits = "description(glob:'local:*') | description(glob:'private:*') | description(glob:'wip:*')"
+
 [template-aliases]
 'format_timestamp(ts)' = 'ts.ago() ++ " " ++ ts.local().format("%c")'
 
