@@ -23,6 +23,7 @@ sh = ["show"]
 shp = ["show", "@-"]
 sp = ["split"]
 sq = ["squash"]
+sqf = ["squash", "--from"]
 ud = ["undo"]
 
 [colors]
