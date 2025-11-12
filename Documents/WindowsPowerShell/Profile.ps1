@@ -8,3 +8,6 @@ Invoke-Expression (&starship init powershell)
 Set-PSReadLineOption -Colors @{ "Selection" = "$([char]0x1b)[7m" }
 Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
 carapace _carapace | Out-String | Invoke-Expression
+
+# PsFzf
+Import-Module psfzf
