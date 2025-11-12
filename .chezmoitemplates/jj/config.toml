@@ -2,6 +2,7 @@
 
 [aliases]
 bk = ["bookmark"]
+bkc = ["bookmark", "create"]
 bkm = ["bookmark", "move"]
 bkmt = ["bookmark", "move", "--to"]
 bkmtp = ["bookmark", "move", "--to", "@-"]
