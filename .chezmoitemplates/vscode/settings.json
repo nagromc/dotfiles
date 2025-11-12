@@ -28,6 +28,11 @@
   "git.autofetchPeriod": 3600,
   "git.inputValidation": true,
   "search.smartCase": true,
+  {{if eq .usage "work" -}}
+  "tabnine.cloudHost": "https://tabnine.in-idt-ivv.local",
+  "tabnine.ignoreCertificateErrors": true,
+  "tabnine.experimentalAutoImports": true,
+  {{- end}}
   "telemetry.telemetryLevel": "off",
   "terminal.integrated.automationProfile.windows": {
     // `%ComSpec%` is generally located at `C:\Windows\System32\cmd.exe`
