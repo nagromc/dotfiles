@@ -1,2 +1,5 @@
+--context-separator=--------
+--context=3
+--line-number
 --no-messages
 --smart-case
