@@ -13,6 +13,7 @@ packages:
       - gittower/tap/git-flow-next
       - glab
       - glances
+      - helix
       - hexyl
       - less
       - lsd
@@ -113,6 +114,7 @@ packages:
         - glab
         - grex
         - gsudo
+        - helix
         - hexyl
         - hyperfine
         - jq
