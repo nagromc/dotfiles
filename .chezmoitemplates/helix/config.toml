@@ -3,3 +3,6 @@ theme = "monokai_pro"
 [editor]
 color-modes = true
 line-number = "relative"
+
+[editor.auto-save]
+focus-lost = true
