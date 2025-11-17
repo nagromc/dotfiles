@@ -3,6 +3,7 @@
 {{- $modifiedConfig := .chezmoi.stdin | fromJson -}}
 
 {{- $_ := set $modifiedConfig "aria2-warning-enabled" false -}}
+{{- $_ := set $modifiedConfig "use_sqlite_cache" true -}}
 
 {{- if deepEqual $currentConfig $modifiedConfig -}}
 {{-   .chezmoi.stdin }}
