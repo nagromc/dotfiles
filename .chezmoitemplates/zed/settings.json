@@ -20,6 +20,7 @@
       "enabled": false
     }
   },
+  "helix_mode": true,
   "theme": {
     "mode": "system",
     "light": "One Light",
