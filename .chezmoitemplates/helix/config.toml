@@ -1,4 +1,5 @@
 theme = "monokai_pro"
 
 [editor]
+color-modes = true
 line-number = "relative"
