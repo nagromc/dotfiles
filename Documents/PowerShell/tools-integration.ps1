@@ -14,5 +14,5 @@ Import-Module Terminal-Icons
 # mise-en-place
 (&mise activate pwsh) | Out-String | Invoke-Expression
 
-# PsFzf
-Import-Module psfzf
+# television
+Invoke-Expression (& { (tv init power-shell | Out-String) })

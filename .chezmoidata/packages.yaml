@@ -145,7 +145,6 @@ packages:
         - posh-docker
         - posh-git
         - procs
-        - psfzf
         - pwsh
         - ripgrep
         - sd
