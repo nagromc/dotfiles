@@ -23,6 +23,8 @@ AppData/Roaming/kanata:
   url: https://github.com/nagromc/kanata-config
   refreshPeriod: 24h  # 1 day
 AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/kanata_gui.exe:
-  type: file
-  url: https://github.com/jtroo/kanata/releases/download/v1.9.0/kanata_gui.exe
+  type: archive-file
+  url: {{ gitHubLatestReleaseAssetURL "jtroo/kanata" "windows-binaries-x64-v*.zip" }}
+  path: kanata_windows_gui_winIOv2_x64.exe
+  refreshPeriod: 168h  # 1 week
 {{ end }}
