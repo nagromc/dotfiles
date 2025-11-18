@@ -2,6 +2,7 @@ packages:
   darwin:
     brews:
       - bat
+      - broot
       - carapace
       - chezmoi
       - difftastic
