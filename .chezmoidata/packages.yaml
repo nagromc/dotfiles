@@ -7,6 +7,7 @@ packages:
       - chezmoi
       - difftastic
       - exa
+      - fd
       - fzf
       - gh
       - git
