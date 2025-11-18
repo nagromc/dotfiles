@@ -1,9 +1,6 @@
 # Broot
 source ~/AppData/Roaming/dystroy/broot/config/launcher/nushell/br
 
-# carapace shell completer
-source ~/.cache/carapace/init.nu
-
 # aliases
 alias cm = chezmoi
 alias envvar = rundll32.exe sysdm.cpl,EditEnvironmentVariables
