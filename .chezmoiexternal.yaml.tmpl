@@ -22,6 +22,12 @@ AppData/Roaming/kanata:
   type: git-repo
   url: https://github.com/nagromc/kanata-config
   refreshPeriod: 24h  # 1 day
+  pull:
+    args:
+      - --autostash
+      - --rebase
+      - origin
+      - main
 AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/kanata_gui.exe:
   type: archive-file
   url: {{ gitHubLatestReleaseAssetURL "jtroo/kanata" "windows-binaries-x64-v*.zip" }}
