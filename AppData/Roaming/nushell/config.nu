@@ -1,6 +1,3 @@
-# Broot
-source ~/AppData/Roaming/dystroy/broot/config/launcher/nushell/br
-
 # aliases
 alias cm = chezmoi
 alias envvar = rundll32.exe sysdm.cpl,EditEnvironmentVariables
