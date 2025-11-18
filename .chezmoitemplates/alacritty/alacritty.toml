@@ -2,7 +2,7 @@
 size = 12
 
 [font.normal]
-family = "Cascadia Code NF"
+family = "CaskaydiaCove Nerd Font"
 
 {{ if eq .chezmoi.os "darwin" -}}
 [terminal.shell]
