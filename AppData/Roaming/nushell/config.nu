@@ -1,6 +1,3 @@
-# Starship prompt
-use ~/.cache/starship/init.nu
-
 # Zoxide
 source ~/.config/zoxide.nu
 
