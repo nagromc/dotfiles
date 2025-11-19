@@ -1,6 +1,6 @@
 [settings]
 trusted_config_paths = [
-  '~/perso',
-  '~/priv',
-  '~/private',
+  '~/dev/perso',
+  '~/dev/priv',
+  '~/dev/private',
 ]
