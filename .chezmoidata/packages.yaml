@@ -134,6 +134,7 @@ packages:
         - miniserve
         - mise
         - mob
+        - moor
         - versions/git-flow-next-pre
         - neovide
         - neovim
