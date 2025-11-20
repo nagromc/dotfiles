@@ -1,6 +1,7 @@
 $Env:COLORTERM = 'truecolor'
 $Env:FZF_DEFAULT_OPTS_FILE = "$Env:USERPROFILE\.config\fzf\fzfrc"
 $Env:LESS = {{ .envvars.less | quote }}
+$Env:MOOR = {{ .envvars.moor | quote }}
 $Env:PAGER = {{ .envvars.pager | quote }}
 $Env:RIPGREP_CONFIG_PATH = "$Env:USERPROFILE\.config\ripgrep\ripgreprc"
 # count shell level
