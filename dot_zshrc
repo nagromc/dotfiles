@@ -19,5 +19,5 @@ source <(carapace _carapace)
 # mise-en-place
 eval "$(mise activate zsh)"
 
-# fzf
-source <(fzf --zsh)
+# television
+eval "$(tv init zsh)"
