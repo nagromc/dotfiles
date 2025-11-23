@@ -13,3 +13,7 @@ args = ["--login"]
 [terminal.shell]
 program = "pwsh"
 {{ end -}}
+
+[window]
+blur = true
+opacity = 0.95
