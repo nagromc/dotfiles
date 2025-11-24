@@ -7,6 +7,9 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "auto_install_extensions": {
+    "gotmpl": true
+  },
   "auto_update": false,
   "autosave": "on_focus_change",
   "buffer_font_family": "CaskaydiaCove Nerd Font",
