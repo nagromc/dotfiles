@@ -5,3 +5,39 @@ export PAGER={{ .envvars.pager }}
 export PATH=~/.local/bin:$PATH
 export RIPGREP_CONFIG_PATH=~/.config/ripgrep/ripgreprc
 export VISUAL=vim
+
+# Create a directory (with parents) and cd into it
+mkcd() {
+  [ $# -eq 1 ] || { printf '%s\n' "Usage: mkcd <path>" >&2; return 2; }
+
+  # Expand ~ and variables safely
+  case $1 in
+      "~") dir=$HOME ;;
+      "~/"*) dir=$HOME/${1#~/} ;;
+      *) dir=$1 ;;
+  esac
+
+  mkdir -p -- "$dir" || return $?
+  cd -- "$dir" || return $?
+}
+
+# Create a temp dir with an optional path and cd into it
+mkcdtmp() {
+  if [ -z "$1" ]; then
+    target="$(mktemp -d)" || return 1
+    cd -- "$target" || return 1
+    pwd
+  else
+    case "$1" in
+      /*)
+        printf 'mkcdtmp: absolute paths are not allowed; path is anchored under $TMPDIR\n' >&2
+        return 2
+        ;;
+    esac
+    base="${TMPDIR:-/tmp}"
+    target="${base%/}/$1"
+    mkdir -p -- "$target" || return 1
+    cd -- "$target" || return 1
+    pwd
+  fi
+}
