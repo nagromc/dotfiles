@@ -21,3 +21,19 @@ eval "$(mise activate zsh)"
 
 # television
 eval "$(tv init zsh)"
+
+# Create a directory (with parents) and cd into it
+mkcd() {
+  if [ $# -ne 1 ]; then
+    echo "Usage: mkcd <path>" >&2
+    return 2
+  fi
+
+  local dir="${1}"
+
+  # Expand ~ and variables safely
+  dir="${~dir}"
+
+  mkdir -p -- "$dir" || return $?
+  cd -- "$dir" || return $?
+}
