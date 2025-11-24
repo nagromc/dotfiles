@@ -1,0 +1,14 @@
+[
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      {{- if eq .chezmoi.os "windows" }}
+      "delete": [
+        "project_panel::Trash", {
+          "skip_prompt": true
+        }
+      ]
+      {{- end }}
+    }
+  }
+]
