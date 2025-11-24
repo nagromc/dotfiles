@@ -37,3 +37,24 @@ mkcd() {
   mkdir -p -- "$dir" || return $?
   cd -- "$dir" || return $?
 }
+
+# Create a temp dir with an optional path and cd into it
+mkcdtmp() {
+  if [ -z "$1" ]; then
+    target="$(mktemp -d)" || return 1
+    cd -- "$target" || return 1
+    pwd
+  else
+    case "$1" in
+      /*)
+        printf 'mkcdtmp: absolute paths are not allowed; path is anchored under $TMPDIR\n' >&2
+        return 2
+        ;;
+    esac
+    base="${TMPDIR:-/tmp}"
+    target="${base%/}/$1"
+    mkdir -p -- "$target" || return 1
+    cd -- "$target" || return 1
+    pwd
+  fi
+}
