@@ -24,15 +24,14 @@ eval "$(tv init zsh)"
 
 # Create a directory (with parents) and cd into it
 mkcd() {
-  if [ $# -ne 1 ]; then
-    echo "Usage: mkcd <path>" >&2
-    return 2
-  fi
-
-  local dir="${1}"
+  [ $# -eq 1 ] || { printf '%s\n' "Usage: mkcd <path>" >&2; return 2; }
 
   # Expand ~ and variables safely
-  dir="${~dir}"
+  case $1 in
+      "~") dir=$HOME ;;
+      "~/"*) dir=$HOME/${1#~/} ;;
+      *) dir=$1 ;;
+  esac
 
   mkdir -p -- "$dir" || return $?
   cd -- "$dir" || return $?
