@@ -1,3 +1,4 @@
 background-blur = true
 background-opacity = 0.97
+focus-follows-mouse = true
 font-family = "CaskaydiaCove Nerd Font Mono"
