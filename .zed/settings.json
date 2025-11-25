@@ -1,5 +1,5 @@
 {
   "file_types": {
-    "Go Text Template": ["*/.chezmoitemplates/**/*.json", "**.tmpl"]
+    "Go Text Template": ["*/.chezmoitemplates/**", "**.tmpl"]
   }
 }
