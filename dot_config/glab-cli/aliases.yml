@@ -1,1 +1,3 @@
 mrco: mr checkout $1 --branch mr/$1
+mrcr: mr create --web --fill
+mrcrt: mr create --web --fill --title "$1"
