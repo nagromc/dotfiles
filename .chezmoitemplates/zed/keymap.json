@@ -1,10 +1,17 @@
 [
   {
+    "bindings": {
+      // Disable the default action vim::WrappingRight
+      "space": null,
+    },
+  },
+  {
     "context": "ProjectPanel",
     "bindings": {
       {{- if eq .chezmoi.os "windows" }}
       "delete": [
-        "project_panel::Trash", {
+        "project_panel::Trash",
+        {
           "skip_prompt": true
         }
       ]

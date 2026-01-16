@@ -33,5 +33,9 @@
     "show_sign_in": false
   },
   "ui_font_size": 16,
-  "use_smartcase_search": true
+  "use_smartcase_search": true,
+  "which_key": {
+    "enabled": true,
+    "delay_ms": 200,
+  },
 }
