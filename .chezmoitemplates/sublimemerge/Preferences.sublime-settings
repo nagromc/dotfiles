@@ -2,5 +2,8 @@
   {{ if eq .usage "work" }}"auto_fetch_delay": 15,{{ end }}
   "font_size": {{ if eq .chezmoi.os "darwin" }}12{{ else }}9{{ end }},
   "render_commit_dialog_message_at_top": false,
+  {{ if eq .chezmoi.os "wind" -}}
+  "terminal_command": "wt.exe -d $dir",
+  {{ end -}}
   "theme": "Merge Dark.sublime-theme",
 }
