@@ -2,6 +2,7 @@
 * text=auto
 *.bat text eol=crlf
 *.cmd text eol=crlf
+*.docx binary diff=pandoc
 *.eps binary diff=exif
 *.gif binary diff=exif
 *.ico binary diff=exif
