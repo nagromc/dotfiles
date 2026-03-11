@@ -154,6 +154,7 @@ packages:
         - sublime-text
         - sumatrapdf
         - tealdeer
+        - television
         - terminal-icons
         - tokei
         - topgrade
