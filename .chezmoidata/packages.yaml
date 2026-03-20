@@ -112,6 +112,7 @@ packages:
         - fzf
         - gh
         - git
+        - git-flow-next
         - gitleaks
         - gitui
         - glab
@@ -135,7 +136,6 @@ packages:
         - mise
         - mob
         - moor
-        - versions/git-flow-next-pre
         - neovide
         - neovim
         - notepadplusplus
