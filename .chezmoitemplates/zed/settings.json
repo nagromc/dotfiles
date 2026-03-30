@@ -8,7 +8,9 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "auto_install_extensions": {
-    "gotmpl": true
+    "editorconfig": true,
+    "gotmpl": true,
+    "xml": true,
   },
   "auto_update": false,
   "autosave": "on_focus_change",
