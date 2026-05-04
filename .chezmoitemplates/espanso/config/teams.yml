@@ -1,0 +1,4 @@
+filter_exec: Teams
+
+extra_excludes:
+  - ../match/email.yml
