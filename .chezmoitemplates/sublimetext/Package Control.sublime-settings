@@ -1,0 +1,37 @@
+{
+  "bootstrapped": true,
+  "in_process_packages":
+  [
+  ],
+  "installed_packages":
+  [
+    "A File Icon",
+    "AsciiDoc",
+    "Codec",
+    "EddyMalou LoremIpsum",
+    "EditorConfig",
+    "HexViewer",
+    "INI",
+    "LSP",
+    "LSP-clangd",
+    "LSP-dockerfile",
+    "LSP-jdtls",
+    "LSP-json",
+    "LSP-lemminx",
+    "LSP-marksman",
+    "LSP-PowerShellEditorServices",
+    "LSP-rust-analyzer",
+    "LSP-taplo",
+    "LSP-vale-ls",
+    "LSP-yaml",
+    "MarkdownPreview",
+    "Nushell",
+    "Package Control",
+    "PackageDev",
+    "PowerShell",
+    "Terminus",
+    "Theme - Monokai Pro",
+    "TOML",
+    "WakaTime",
+  ],
+}
