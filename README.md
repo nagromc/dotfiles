@@ -9,6 +9,7 @@ The old version of my dotfiles repo can be found [here](https://github.com/nagro
 On Windows:
 
 ```powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 Invoke-RestMethod -Uri https://install.dotfiles.ploki.fr | Invoke-Expression
 ```
 

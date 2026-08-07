@@ -1,20 +1,3 @@
-function SetRemoteSignedExecutionPolicy {
-  Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-}
+$Env:Path += ";$Env:USERPROFILE\scoop\shims;$Env:USERPROFILE\scoop\apps\vscode\current\bin"  # add Scoop shims path temporarily during bootstrap
 
-function InstallTmpChezmoi {
-  '$params = "-BinDir $Env:TEMP"', (Invoke-RestMethod -Uri https://get.chezmoi.io/ps1) | Invoke-Expression
-}
-
-function AddScoopToPath {
-  $env:PATH += "$env:USERPROFILE/scoop/shims"
-}
-
-function BootstrapChezmoi {
-  powershell -c "& '$Env:TEMP/chezmoi.exe' init --apply nagromc"
-}
-
-SetRemoteSignedExecutionPolicy
-InstallTmpChezmoi
-AddScoopToPath
-BootstrapChezmoi
+Invoke-Expression "&{$(Invoke-RestMethod 'https://get.chezmoi.io/ps1')} -BinDir $Env:TEMP -- init --apply --verbose nagromc"
