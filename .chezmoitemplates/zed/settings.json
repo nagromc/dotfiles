@@ -7,6 +7,9 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "agent": {
+    "dock": "right"
+  },
   "auto_install_extensions": {
     "editorconfig": true,
     "gotmpl": true,
@@ -20,10 +23,22 @@
     "ss01": true
   },
   "buffer_font_size": 12,
+  "collaboration_panel": {
+    "dock": "left"
+  },
   "git": {
     "inline_blame": {
       "enabled": false
     }
+  },
+  "git_panel": {
+    "dock": "left"
+  },
+  "outline_panel": {
+    "dock": "right"
+  },
+  "project_panel": {
+    "dock": "left"
   },
   "theme": {
     "mode": "system",
