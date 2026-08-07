@@ -9,7 +9,8 @@ The old version of my dotfiles repo can be found [here](https://github.com/nagro
 On Windows:
 
 ```powershell
-Invoke-RestMethod -Uri https://install.dotfiles.ploki.fr | Invoke-Expression
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+Invoke-Expression "&{$(Invoke-RestMethod 'https://get.chezmoi.io/ps1')} -BinDir $Env:TEMP -- init --apply --verbose nagromc"
 ```
 
 ## Applying configuration to target environment
