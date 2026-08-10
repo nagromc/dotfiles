@@ -1,6 +1,11 @@
 {{- /* chezmoi:modify-template */ -}}
-{{- $currentConfig := .chezmoi.stdin | fromJson -}}
-{{- $modifiedConfig := .chezmoi.stdin | fromJson -}}
+
+{{- $currentConfig := dict -}}
+{{- $modifiedConfig := dict -}}
+{{- with .chezmoi.stdin -}}
+  {{- $currentConfig = (fromJson .) -}}
+  {{- $modifiedConfig = (fromJson .) -}}
+{{- end -}}
 
 {{- $_ := set $modifiedConfig "FetchRemotesAutomatically" true -}}
 {{- $_ := set $modifiedConfig "FetchAllTags" true -}}
