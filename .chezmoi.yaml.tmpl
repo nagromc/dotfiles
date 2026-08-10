@@ -14,12 +14,6 @@
 {{ $wakatimeapikey := keepassxcAttribute "WakaTime" "API key" -}}
 {{ end }}
 
-{{- if eq .chezmoi.os "windows" }}
-# override default cmd.exe on windows
-cd:
-  command: pwsh
-{{- end }}
-
 data:
   gitemail: {{ $gitemail }}
   keepassxcpath: {{ $keepassxcpath }}
@@ -28,6 +22,13 @@ data:
 
 diff:
   pager: delta
+
+interpreters:
+  ps1:
+    command: powershell
+    args:
+    - -NoLogo
+    - -NoProfile
 
 keepassxc:
   {{ if eq $usage "home" -}}
