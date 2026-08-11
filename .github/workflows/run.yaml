@@ -7,9 +7,9 @@ jobs:
     runs-on: windows-latest
     steps:
       - shell: powershell
-        run: Invoke-RestMethod -Uri https://install.dotfiles.ploki.fr | Invoke-Expression
+        run: Invoke-Expression "&{$(Invoke-RestMethod 'https://install.dotfiles.ploki.fr')} -BranchName ${{ github.ref_name }}"
 
   macos:
     runs-on: macos-latest
     steps:
-      - run: sh -c "$(curl -fsLS https://get.chezmoi.io)" -- -b $TMPDIR init --apply --verbose --branch ci-macos nagromc
+      - run: sh -c "$(curl -fsLS https://get.chezmoi.io)" -- -b $TMPDIR init --apply --verbose --branch ${{ github.ref_name }} ${{ github.repository_owner }}
