@@ -6,13 +6,13 @@ packages:
       - carapace
       - chezmoi
       - difftastic
-      - exa
+      - eza
       - fd
       - fzf
       - gh
       - git
+      - git-flow-next
       - gitleaks
-      - gittower/tap/git-flow-next
       - glab
       - glances
       - helix
@@ -68,16 +68,12 @@ packages:
       - sublime-merge
       - sublime-text
       - syncthing-app
-      - vagrant
       - visual-studio-code
       - vlc
-      - vmware-fusion
       - vscodium
       - warp
-      - yubico-yubikey-manager
-      - yubico-yubikey-personalization-gui
+      - yubico-authenticator
     taps:
-      - gittower/tap
   windows:
     scoop:
       packages:
