@@ -1,0 +1,11 @@
+name: CI
+
+on: push
+
+jobs:
+  install-dotfiles:
+    runs-on: windows-latest
+
+    steps:
+      - shell: powershell
+        run: Invoke-RestMethod -Uri https://install.dotfiles.ploki.fr | Invoke-Expression

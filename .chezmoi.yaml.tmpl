@@ -2,16 +2,27 @@
 {{ "# Do *not* edit this file as it will be overwritten on next `chezmoi init` call." }}
 {{ printf "# Edit `%s/.chezmoi.yaml.tmpl` instead" .chezmoi.sourceDir -}}
 
-{{ $gitemail := promptStringOnce . "gitemail" "Git e-mail" -}}
+{{ $gitemail := "" }}
+{{ $keepassxcpath := "" }}
+{{ $usage := "" }}
+{{ $wakatimeapikey := "" -}}
+{{ if env "CI" }}
+  {{ $gitemail = "dummy@example.com" }}
+  {{ $keepassxcpath = "/dummy/path/to/keepassxc" }}
+  {{ $usage = "dummy-usage" }}
+  {{ $wakatimeapikey = "dummy-wakatime-api-key" -}}
+{{ else }}
+  {{ $gitemail = promptStringOnce . "gitemail" "Git e-mail" }}
 
-{{- $usageChoices := list "home" "work" -}}
-{{- $usage := promptChoiceOnce . "usage" "Usage" $usageChoices -}}
+  {{ $keepassxcpath = promptStringOnce . "keepassxcpath" "KeePassXC database path"}}
 
-{{ $keepassxcpath := promptStringOnce . "keepassxcpath" "KeePassXC database path" -}}
+  {{ $usageChoices := list "home" "work" }}
+  {{ $usage = promptChoiceOnce . "usage" "Usage" $usageChoices }}
 
-{{ $wakatimeapikey := get . "wakatimeapikey" -}}
-{{ if and (not $wakatimeapikey) (get . "keepassxcpath") -}}
-{{ $wakatimeapikey := keepassxcAttribute "WakaTime" "API key" -}}
+  {{ $wakatimeapikey = get . "wakatimeapikey" }}
+  {{ if and (not $wakatimeapikey) (get . "keepassxcpath") }}
+    {{ $wakatimeapikey = keepassxcAttribute "WakaTime" "API key" }}
+  {{ end }}
 {{ end }}
 
 data:
