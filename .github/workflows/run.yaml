@@ -6,6 +6,11 @@ jobs:
   windows:
     runs-on: windows-latest
     steps:
+      - name: Cache Scoop packages
+        uses: actions/cache@v6
+        with:
+          path: ~\scoop\cache
+          key: scoop-cache
       - shell: powershell
         run: Invoke-Expression "&{$(Invoke-RestMethod 'https://install.dotfiles.ploki.fr')} -BranchName ${{ github.ref_name }}"
 
