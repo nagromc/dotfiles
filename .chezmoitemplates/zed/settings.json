@@ -13,6 +13,7 @@
   "auto_install_extensions": {
     "editorconfig": true,
     "gotmpl": true,
+    "toml": true,
     "xml": true,
   },
   "auto_update": false,
