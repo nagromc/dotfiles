@@ -78,6 +78,7 @@ packages:
     scoop:
       packages:
         - 7zip
+        - altsnap
         - ariang-native
         - autohotkey
         - bat
