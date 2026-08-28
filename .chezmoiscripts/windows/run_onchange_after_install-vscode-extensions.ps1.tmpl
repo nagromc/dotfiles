@@ -1,3 +1,4 @@
 {{ range .vscode.extensions -}}
   code --install-extension {{ . }} --force
+  codium --install-extension {{ . }} --force
 {{ end -}}
