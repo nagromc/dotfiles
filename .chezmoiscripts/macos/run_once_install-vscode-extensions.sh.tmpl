@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
 {{ range .vscode.extensions -}}
-  code --install-extension --force {{ . }}
+  code --install-extension {{ . }} --force
 {{ end -}}
