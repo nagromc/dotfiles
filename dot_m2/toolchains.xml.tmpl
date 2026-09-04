@@ -1,11 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <toolchains>
-  {{ range $javaVersion := list 8 11 17 21 25 }}
+  <toolchain>
+    <type>jdk</type>
+    <provides>
+      <version>8</version>
+      <vendor>Temurin</vendor>
+    </provides>
+    <configuration>
+      <jdkHome>
+        {{- if eq $.chezmoi.os "windows" -}}
+        ${env.USERPROFILE}\scoop\apps\temurin8-jdk\current
+        {{- else if eq $.chezmoi.os "darwin" -}}
+        /Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home
+        {{- end -}}
+      </jdkHome>
+    </configuration>
+  </toolchain>
+
+  {{- range $javaVersion := list 11 17 21 25 }}
+
   <toolchain>
     <type>jdk</type>
     <provides>
       <version>{{ $javaVersion }}</version>
-      <vendor>temurin</vendor>
+      <vendor>Eclipse Adoptium</vendor>
     </provides>
     <configuration>
       <jdkHome>
@@ -17,5 +35,5 @@
       </jdkHome>
     </configuration>
   </toolchain>
-  {{ end }}
+  {{- end }}
 </toolchains>
