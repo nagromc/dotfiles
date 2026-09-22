@@ -62,7 +62,6 @@ packages:
       - proton-drive
       - proton-mail-bridge
       - protonvpn
-      - qbittorrent
       - spotify
       - stats
       - sublime-merge
