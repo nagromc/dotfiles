@@ -41,6 +41,9 @@
   "project_panel": {
     "dock": "left"
   },
+  "sticky_scroll": {
+    "enabled": true
+  },
   "theme": {
     "mode": "system",
     "light": "One Light",
