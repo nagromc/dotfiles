@@ -39,7 +39,6 @@ packages:
       - yazi
       - zoxide
     casks:
-      - ariang
       - balenaetcher
       - beyond-compare
       - docker-desktop
