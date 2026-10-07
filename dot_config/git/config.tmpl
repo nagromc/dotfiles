@@ -208,6 +208,7 @@
   pager = delta
   {{- if eq .chezmoi.os "windows" }}
   sshCommand = {{ joinPath (env "windir") "/System32/OpenSSH/ssh.exe" | replaceAllRegex "\\\\" "/" }}
+  symlinks = true
   {{- end }}
   whitespace = blank-at-eol,space-before-tab,tab-in-indent,blank-at-eof
 [delta]
