@@ -8,13 +8,13 @@ global_vars:
 
 
 matches:
-  - regex: "[cC]dl?t,"
+  - regex: "[cC]dl?t,\x0D"
     label: 'Email: replace "Cordialement" abbreviation'
     replace: |-
       Cordialement,
       {{ "{{my_name}}" }}
 
-  - regex: "[bB]onjour(?P<name>.*),"
+  - regex: "[bB]onjour(?P<name>.*),\x0D\x0D"
     label: "Email: template (Bonjour, Cordialement,)"
     replace: |-
       {{ "Bonjour{{name}}," }}
