@@ -10,14 +10,14 @@ tag_disabled = false
 [git_metrics]
 disabled = false
 
+[localip]
+disabled = false
+
 [mise]
 disabled = false
 # `on` is not shown unlike what the documentation says
 format = "on [$symbol$health]($style)"
 symbol = "🍽️ "
-
-[localip]
-disabled = false
 
 {{ if eq .usage "work" -}}
 [shell]
